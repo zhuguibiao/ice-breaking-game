@@ -3,7 +3,7 @@ module.exports = {
     title: `破冰游戏`,
     author: {
       name: `zhuguibiao`,
-      summary: `love`,
+      summary: `enxi`,
     },
     description: `一个服务于jh的破冰游戏`,
     siteUrl: `https://icebreakinggames.gatsbyjs.io/`,
