@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { Disqus } from 'gatsby-plugin-disqus';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -28,6 +29,16 @@ const BlogPostTemplate = ({ data, location }) => {
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
+        />
+        <Disqus
+          config={{
+            /* Replace PAGE_URL with your post's canonical URL variable */
+            url: 'https://icebreakinggames.gatsbyjs.io/',
+            /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+            identifier: 'https://icebreakinggames.gatsbyjs.io/',
+            /* Replace PAGE_TITLE with the title of the page */
+            title: '破冰游戏',
+          }}
         />
         <hr />
         <footer>
