@@ -84,7 +84,7 @@ export default ({ data, location }) => {
     <Layout>
       <SEO title={categoryTitle} />
       <Wrapper>
-        <Profile />
+        {/* <Profile /> */}
         <h1 className="category-title" css={tw`mt-4 px-4 text-4xl font-bold`}>
           #{categoryTitle}
         </h1>
