@@ -7,7 +7,7 @@ import Markdown from "../components/Markdown"
 import Navigator from "../components/Navigator"
 import Divider from "../components/Divider"
 import TableOfContents from "../components/TableOfContents"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Tags from "../components/Tags"
 import ShareButtons from "../components/ShareButtons"
 import { Disqus } from 'gatsby-plugin-disqus';

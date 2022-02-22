@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react"
 import tw from "twin.macro"
 import SEO from "../components/seo"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import queryString from "query-string"
 import Search from "../components/Search"
