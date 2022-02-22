@@ -1,36 +1,32 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React, { useContext } from "react"
+import ThemeContext from "../lib/context/ThemContext"
+import tw, { css } from "twin.macro"
+import Nav from "./Nav"
+import DarkmodeToggle from "./DarkmodeToggle"
+import Footer from "./Footer"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
-  }
-
+const Wrapper = tw.div`min-h-screen`
+const Layout = ({ children }) => {
+  const { isDarkMode } = useContext(ThemeContext)
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}
-        {/* , Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a> */}
-      </footer>
-    </div>
+    <Wrapper
+      css={css`
+        transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: ${isDarkMode ? "#1E1F21" : "#FFFFFF"};
+        color: ${isDarkMode ? "#EEEEEE" : "#333333"};
+      `}
+    >
+      <div
+        css={css`
+          min-height: calc(100vh - 100px);
+        `}
+      >
+        <Nav />
+        {children}
+      </div>
+      <DarkmodeToggle />
+      <Footer />
+    </Wrapper>
   )
 }
 
