@@ -33,7 +33,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <Disqus
           config={{
             /* Replace PAGE_URL with your post's canonical URL variable */
-            url: 'https://icebreakinggames.gatsbyjs.io/',
+            // url: 'https://icebreakinggames.gatsbyjs.io/',
             /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
             // identifier: 'https-icebreakinggames-gatsbyjs-io',
             /* Replace PAGE_TITLE with the title of the page */
