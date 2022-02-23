@@ -30,6 +30,7 @@ const Tag = ({ onClick, tag, selectedTag, scrollToCenter }) => {
         ${selectedTag === tag ? `background-color` : `color`}: ${isDarkMode
           ? darkModeColor.textColor1
           : whiteModeColor.textColor1};
+        font-size:14px;
       `}
       onClick={handleClick}
     >

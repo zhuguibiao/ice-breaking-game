@@ -12,7 +12,7 @@ module.exports = {
     linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/icon.png`, // Add your favicon
-  keywords: [`blog`],
+  keywords: [`破冰游戏`,`教会`],
   comment: {
     utterances: "JaeSeoKim/jaeseokim.github.io", // Your repository for archive comment
   },
@@ -25,5 +25,5 @@ module.exports = {
   share: {
     facebookAppId: "zhuguibiao", // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: "UA-176158326-1", // Add your google analytics tranking ID
+  ga: "G-JY47LX4BSD", // Add your google analytics tranking ID
 }

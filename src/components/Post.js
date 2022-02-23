@@ -24,7 +24,7 @@ const Post = ({ post }) => {
             --transform-scale-x: 1.02;
             --transform-scale-y: 1.02;
           }
-          ${tw`mx-4 my-12 transform`}
+          ${tw`mx-4 my-10 transform`}
         `}
       >
         <Link to={post.node.fields.slug}>
@@ -42,7 +42,7 @@ const Post = ({ post }) => {
           >
             {post.node.frontmatter.date}
           </h2>
-          <div css={tw`my-4`}>
+          <div css={tw`my-2`}>
             <Tags tags={post.node.frontmatter.tags} onClick={() => {}} />
           </div>
           <div
