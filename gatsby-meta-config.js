@@ -14,7 +14,7 @@ module.exports = {
   icon: `content/assets/icon.png`, // Add your favicon
   keywords: [`破冰游戏`,`教会`],
   comment: {
-    utterances: "JaeSeoKim/jaeseokim.github.io", // Your repository for archive comment
+    utterances: "", // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
