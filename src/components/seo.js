@@ -16,7 +16,7 @@ function SEO({ description, lang, meta, title }) {
   } = useStaticQuery(
     graphql`
       query {
-        ogImage: file(absolutePath: { regex: "/social-image.png/" }) {
+        ogImage: file(absolutePath: { regex: "/timg.jpeg/" }) {
           childImageSharp {
             original {
               src
