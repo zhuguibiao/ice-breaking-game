@@ -2,13 +2,13 @@ module.exports = {
   title: `破冰游戏`,
   description: `破冰游戏`,
   author: `zhuguibiao`,
-  introduction: `一个服务于教会的破冰游戏网站`,
+  introduction: `An icebreaker game website serving the jh`,
   siteUrl: `https://icebreakinggames.gatsbyjs.io/`,
   social: {
-    twitter: `zhuguibiao`, // Your Twitter account
+    twitter: ``, // Your Twitter account
     github: `zhuguibiao`, // Your GitHub account
     medium: ``, // Your Medium account
-    facebook: `zhuguibiao`, // Your Facebook account
+    facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/icon.png`, // Add your favicon
