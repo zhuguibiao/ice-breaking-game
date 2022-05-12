@@ -146,4 +146,6 @@ module.exports = {
       }
     },
   ],
+  pathPrefix: '/ice-breaking-game',
+
 }
