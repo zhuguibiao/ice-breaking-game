@@ -23,6 +23,7 @@ specifiers:
   gatsby-remark-emoji: 0.0.3
   gatsby-remark-images: ^3.8.0
   gatsby-remark-images-medium-zoom: ^1.7.0
+  gatsby-remark-video: ^1.2.5
   gatsby-remark-vscode: ^3.2.0
   gatsby-source-filesystem: ^2.8.0
   gatsby-transformer-remark: ^2.13.0
@@ -69,7 +70,7 @@ dependencies:
   gatsby-transformer-sharp: 2.12.1_85c2978793d23fc44de9b94aba6244d7
   install: 0.13.0
   intersection-observer: 0.11.0
-  material-theme: github.com/Binaryify/OneDark-Pro/65eb07a5d174e2a695daae9f13ee76a6a5376452
+  material-theme: github.com/Binaryify/OneDark-Pro/e31f42b25f114de0108ea09d263bfe7cda3e66af
   npm: 7.24.2
   prop-types: 15.8.1
   query-string: 6.14.1
@@ -85,6 +86,7 @@ devDependencies:
   '@emotion/styled': 10.3.0_864809d686fef2043b51d8d752270dc1
   babel-preset-gatsby: 0.5.16
   gatsby-plugin-emotion: 4.5.0_a2f03bfc028458543636fe97cdf1a27f
+  gatsby-remark-video: 1.2.5
   gh-pages: 4.0.0
   prettier: 2.5.1
   tailwindcss: 1.9.6
@@ -8111,6 +8113,12 @@ packages:
       unist-util-visit-parents: 2.1.2
     dev: false
 
+  /gatsby-remark-video/1.2.5:
+    resolution: {integrity: sha512-pEEEVhyfJ2w8fIWJRmGHUz1T0yu9XhhnF8UpSebghpPMKS5Y/dPRWWrd7ukEJk9TQOZ4NhPy4UMeLVYFdE/kuA==}
+    dependencies:
+      unist-util-visit: 1.4.1
+    dev: true
+
   /gatsby-remark-vscode/3.3.1:
     resolution: {integrity: sha512-KUCDU8KauLikURYuGyAZ0aLhHhd/BP2XwzP/WP0wkgyKjh650PwewQghwpD9g2wVkN+fThFJDs4G64K4fduDGQ==}
     dependencies:
@@ -15454,7 +15462,6 @@ packages:
 
   /unist-util-is/3.0.0:
     resolution: {integrity: sha512-sVZZX3+kspVNmLWBPAB6r+7D9ZgAFPNWm66f7YNb420RlQSbn+n8rG8dGZSkrER7ZIXGQYNm5pqC3v3HopH24A==}
-    dev: false
 
   /unist-util-is/4.1.0:
     resolution: {integrity: sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg==}
@@ -15531,7 +15538,6 @@ packages:
     resolution: {integrity: sha512-DyN5vD4NE3aSeB+PXYNKxzGsfocxp6asDc2XXE3b0ekO2BaRUpBicbbUygfSvYfUz1IkmjFR1YF7dPklraMZ2g==}
     dependencies:
       unist-util-is: 3.0.0
-    dev: false
 
   /unist-util-visit-parents/3.1.1:
     resolution: {integrity: sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==}
@@ -15551,7 +15557,6 @@ packages:
     resolution: {integrity: sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==}
     dependencies:
       unist-util-visit-parents: 2.1.2
-    dev: false
 
   /unist-util-visit/2.0.3:
     resolution: {integrity: sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==}
@@ -16517,10 +16522,10 @@ packages:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
     dev: false
 
-  github.com/Binaryify/OneDark-Pro/65eb07a5d174e2a695daae9f13ee76a6a5376452:
-    resolution: {tarball: https://codeload.github.com/Binaryify/OneDark-Pro/tar.gz/65eb07a5d174e2a695daae9f13ee76a6a5376452}
+  github.com/Binaryify/OneDark-Pro/e31f42b25f114de0108ea09d263bfe7cda3e66af:
+    resolution: {tarball: https://codeload.github.com/Binaryify/OneDark-Pro/tar.gz/e31f42b25f114de0108ea09d263bfe7cda3e66af}
     name: material-theme
-    version: 3.13.26
+    version: 3.13.29
     engines: {vscode: ^1.66.0}
     dependencies:
       '@types/marked': 4.0.2

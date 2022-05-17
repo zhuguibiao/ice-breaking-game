@@ -32,6 +32,19 @@ module.exports = {
             },
           },
           {
+            resolve: 'gatsby-remark-video',
+            options: {
+              width: 800,
+              height: 'auto',
+              preload: 'auto',
+              muted: true,
+              autoplay: false,
+              playsinline: true,
+              controls: true,
+              loop: true
+            }
+          },
+          {
             resolve: `gatsby-remark-images-medium-zoom`,
             options: {
               margin: 12,
@@ -145,6 +158,7 @@ module.exports = {
         shortname: `https-icebreakinggames-gatsbyjs-io`
       }
     },
+
   ],
   pathPrefix: '/ice-breaking-game',
 
