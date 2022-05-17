@@ -7,8 +7,8 @@
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/猜猜有意义物品/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/动作接力/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/读懂你的嘴唇/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/格价专家/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/线上对对碰/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/格价专家/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/凝聚期/凝聚期游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/逛三园/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/听声音/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -26,9 +26,9 @@
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/凝聚期/筑起祭坛/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/凝聚期/扑克牌大作战/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/凝聚期/别问我是谁/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/哈利路亚赞美主/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/暗渡陈仓/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/谁最大/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/哈利路亚赞美主/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/鼓励无限/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/出发期/同心合力/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/凝聚期/正面朝上/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -49,6 +49,7 @@
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/探索期/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/videos/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
