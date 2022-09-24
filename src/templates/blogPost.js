@@ -95,18 +95,15 @@ export default ({ data, pageContext, location }) => {
               </Wrapper>
             </div>
             <Wrapper>
-              <div style={{ marginTop: '10px' }}>
+              {/* <div style={{ marginTop: '10px' }}>
                 <Disqus
                   config={{
-                    /* Replace PAGE_URL with your post's canonical URL variable */
                     // url: 'https://icebreakinggames.gatsbyjs.io/',
-                    /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
                     // identifier: 'https-icebreakinggames-gatsbyjs-io',
-                    /* Replace PAGE_TITLE with the title of the page */
                     // title: '破冰游戏',
                   }}
                 />
-              </div>
+              </div> */}
 
               <ShareButtons
                 url={location.href}

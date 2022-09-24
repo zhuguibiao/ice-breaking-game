@@ -124,6 +124,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { fields: [frontmatter___date], order: DESC }
+                  filter: { frontmatter: { draft: { eq: false } } },
                 ) {
                   edges {
                     node {

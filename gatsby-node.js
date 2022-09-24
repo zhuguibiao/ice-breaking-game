@@ -20,6 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
       {
         postsRemark: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
+          filter: { frontmatter: { draft: { eq: false } } }
         ) {
           edges {
             node {
@@ -46,8 +47,8 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
-
     const posts = result.data.postsRemark.edges
+    // console.log(posts)
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node

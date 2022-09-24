@@ -22,8 +22,8 @@ const Markdown = ({ html }) => {
     h2 {
       font-size: 1.25rem;
       font-weight: 600;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
     h3,
     h4,
@@ -76,6 +76,9 @@ const Markdown = ({ html }) => {
     }
     ul {
       list-style-type: disc;
+    }
+    ul>li::marker{
+      content: '';
     }
     blockquote {
       padding: 0.5rem;

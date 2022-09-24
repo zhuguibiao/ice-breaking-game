@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: `https://icebreakinggames.gatsbyjs.io/`,
   social: {
     twitter: `zhuguibiao`, // Your Twitter account
-    github: `zhuguibiao`, // Your GitHub account
+    github: `zhuguibiao/ice-breaking-game`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
