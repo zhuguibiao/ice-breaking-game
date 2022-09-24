@@ -1,0 +1,596 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/><style data-href="/ice-breaking-game/styles.d53766664f3eaba3db40.css" id="gatsby-global-css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#a0aec0}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#a0aec0}input::placeholder,textarea::placeholder{color:#a0aec0}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}</style><meta name="generator" content="Gatsby 2.32.13"/><style type="text/css">
+    .toc-header.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .toc-header.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .toc-header svg,
+    h2 .toc-header svg,
+    h3 .toc-header svg,
+    h4 .toc-header svg,
+    h5 .toc-header svg,
+    h6 .toc-header svg {
+      visibility: hidden;
+    }
+    h1:hover .toc-header svg,
+    h2:hover .toc-header svg,
+    h3:hover .toc-header svg,
+    h4:hover .toc-header svg,
+    h5:hover .toc-header svg,
+    h6:hover .toc-header svg,
+    h1 .toc-header:focus svg,
+    h2 .toc-header:focus svg,
+    h3 .toc-header:focus svg,
+    h4 .toc-header:focus svg,
+    h5 .toc-header:focus svg,
+    h6 .toc-header:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/ice-breaking-game/favicon-32x32-122c0b177eb3106eed947f8b136fb4ef.png" type="image/png"/><link rel="manifest" href="/ice-breaking-game/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#3F4145"/><link rel="apple-touch-icon" sizes="48x48" href="/ice-breaking-game/icons/icon-48x48-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="72x72" href="/ice-breaking-game/icons/icon-72x72-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="96x96" href="/ice-breaking-game/icons/icon-96x96-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="144x144" href="/ice-breaking-game/icons/icon-144x144-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="192x192" href="/ice-breaking-game/icons/icon-192x192-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="256x256" href="/ice-breaking-game/icons/icon-256x256-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="384x384" href="/ice-breaking-game/icons/icon-384x384-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="512x512" href="/ice-breaking-game/icons/icon-512x512-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="alternate" type="application/rss+xml" href="/ice-breaking-game/rss.xml"/><title data-react-helmet="true">凝聚期游戏汇总 | 破冰游戏</title><meta data-react-helmet="true" name="description" content="游戏来源：
+破冰游戏（需要vpn） 汇总游戏相当于直接复制链接内的，并非本网站记录的游戏，仅供参考 放飞机 目的：组员互相认识 时间：10分钟 材料：纸和笔 请组员在纸上写下自己的个人资料来形容自己的性格，资料越多越好。但不可写外貌特征，亦不可让别人看到纸上的内容。几分钟后，请组员将纸折成飞机。注意：飞机头不宜折得太尖。 然后组员围大圈站好，带领者告诉他们：现在每只飞机内有一位乘客。请大家合上眼…"/><meta data-react-helmet="true" property="og:title" content="凝聚期游戏汇总"/><meta data-react-helmet="true" property="og:image" content="/ice-breaking-game/static/timg-dc3f4acd428cae0f9c5299f571477406.jpeg"/><meta data-react-helmet="true" property="og:description" content="游戏来源：
+破冰游戏（需要vpn） 汇总游戏相当于直接复制链接内的，并非本网站记录的游戏，仅供参考 放飞机 目的：组员互相认识 时间：10分钟 材料：纸和笔 请组员在纸上写下自己的个人资料来形容自己的性格，资料越多越好。但不可写外貌特征，亦不可让别人看到纸上的内容。几分钟后，请组员将纸折成飞机。注意：飞机头不宜折得太尖。 然后组员围大圈站好，带领者告诉他们：现在每只飞机内有一位乘客。请大家合上眼…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:image" content="/ice-breaking-game/static/timg-dc3f4acd428cae0f9c5299f571477406.jpeg"/><meta data-react-helmet="true" name="twitter:creator" content="zhuguibiao"/><meta data-react-helmet="true" name="twitter:title" content="凝聚期游戏汇总"/><meta data-react-helmet="true" name="twitter:description" content="游戏来源：
+破冰游戏（需要vpn） 汇总游戏相当于直接复制链接内的，并非本网站记录的游戏，仅供参考 放飞机 目的：组员互相认识 时间：10分钟 材料：纸和笔 请组员在纸上写下自己的个人资料来形容自己的性格，资料越多越好。但不可写外貌特征，亦不可让别人看到纸上的内容。几分钟后，请组员将纸折成飞机。注意：飞机头不宜折得太尖。 然后组员围大圈站好，带领者告诉他们：现在每只飞机内有一位乘客。请大家合上眼…"/><link rel="sitemap" type="application/xml" href="/ice-breaking-game/sitemap.xml"/><link as="script" rel="preload" href="/ice-breaking-game/webpack-runtime-9c1db2b860cd80d581f6.js"/><link as="script" rel="preload" href="/ice-breaking-game/framework-69a52ed48f4a92a81de1.js"/><link as="script" rel="preload" href="/ice-breaking-game/styles-1043fb1b9b9e69356781.js"/><link as="script" rel="preload" href="/ice-breaking-game/app-3f8f434f3e0ae3f17e4a.js"/><link as="script" rel="preload" href="/ice-breaking-game/ff08cc1e-d4f433c77082a977d2a7.js"/><link as="script" rel="preload" href="/ice-breaking-game/76ed74f8-43f7f23211125c9a1934.js"/><link as="script" rel="preload" href="/ice-breaking-game/a0fb4d8f-99565716b20eaecea97d.js"/><link as="script" rel="preload" href="/ice-breaking-game/commons-9c46c4e4aadc6f60ac65.js"/><link as="script" rel="preload" href="/ice-breaking-game/7a297f752dcfe258c0b0106d89edb3a916af916e-4dfe69fa6f72a652e343.js"/><link as="script" rel="preload" href="/ice-breaking-game/component---src-templates-blog-post-js-fc1737e2369fba6f7e6c.js"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/凝聚期/凝聚期游戏汇总/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/sq/d/240101170.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/sq/d/352973270.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript><style data-emotion-css="1vyo7ug">.css-1vyo7ug{position:fixed;bottom:0;left:0;margin-left:0.5rem;margin-bottom:0.5rem;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:0.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));font-size:0.875rem;font-weight:700;padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:0.75rem;background-color:#86a8e7;z-index:9999;}</style><div class="css-1vyo7ug"><style data-emotion-css="5x4yj0">.css-5x4yj0{fill:currentColor;width:1.5rem;height:1.5rem;margin-right:0.5rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 192 512" class="css-5x4yj0" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"></path></svg><style data-emotion-css="1f2k2gl">.css-1f2k2gl{margin-left:0.5rem;}</style><div class="css-1f2k2gl">Please enable JavaScript to use this site.<br/>JavaScript.</div></div></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="f6s0ma">.css-f6s0ma{-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#333333;}</style><style data-emotion-css="acifd">.css-acifd{min-height:100vh;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#333333;}</style><div class="css-acifd ehw5m150"><style data-emotion-css="8ezs2g">.css-8ezs2g{min-height:calc(100vh - 100px);}</style><div class="css-8ezs2g"><style data-emotion-css="1yxw6gp">.css-1yxw6gp{background:linear-gradient( 90deg,#7f7fd5,#86a8e7 );}</style><div class="css-1yxw6gp"><style data-emotion-css="1mqm4zt">.css-1mqm4zt{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:1280px;margin-left:auto;margin-right:auto;padding:1.25rem;}</style><nav class="css-1mqm4zt e18p4ymr0"><style data-emotion-css="1usmgm5">.css-1usmgm5{font-size:1.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));font-weight:700;}</style><a class="css-1usmgm5" href="/ice-breaking-game/">破冰游戏</a><a aria-label="search page" href="/ice-breaking-game/search"><style data-emotion-css="47445j">.css-47445j{--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));margin-top:auto;margin-bottom:auto;width:2rem;height:2rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-47445j" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></a></nav></div><style data-emotion-css="aod07n">.css-aod07n{background:linear-gradient( 90deg,#7f7fd5,#86a8e7 );position:fixed;width:100%;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);z-index:100;-webkit-transition:all 300ms cubic-bezier(0,0,0.2,1);transition:all 300ms cubic-bezier(0,0,0.2,1);top:-100px;}</style><div class="css-aod07n"><nav class="css-1mqm4zt e18p4ymr0"><a class="css-1usmgm5" href="/ice-breaking-game/">破冰游戏</a><a aria-label="search page" href="/ice-breaking-game/search"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-47445j" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></a></nav></div><style data-emotion-css="w27u98">.css-w27u98{margin-top:1rem;padding-left:1rem;padding-right:1rem;}</style><div class="blog-post-container css-w27u98"><div class="blog-post"><style data-emotion-css="1bdwg0l">.css-1bdwg0l{width:100%;max-width:768px;margin-left:auto;margin-right:auto;}</style><div class="css-1bdwg0l ek48yxb0"><style data-emotion-css="1abxlfd">.css-1abxlfd{font-size:2.25rem;font-weight:700;margin-bottom:1rem;}@media (min-width:768px){.css-1abxlfd{font-size:3rem;}}</style><h1 class="blog-title css-1abxlfd">凝聚期游戏汇总</h1><style data-emotion-css="cpn9zx">.css-cpn9zx{font-size:1rem;margin-bottom:1rem;}</style><h2 class="blog-date css-cpn9zx">2022-04-07</h2><style data-emotion-css="cet0rr">.css-cet0rr{margin-bottom:0.5rem;}</style><div class="blog-tags css-cet0rr"><style data-emotion-css="1up0vzc">.css-1up0vzc{white-space:nowrap;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);font-size:1rem;font-weight:700;border-radius:9999px;margin-right:0.5rem;margin-top:0.25rem;margin-bottom:0.25rem;padding-top:0.25rem;padding-bottom:0.25rem;padding-left:0.75rem;padding-right:0.75rem;background-color:#edf2f7;color:#3737B9;font-size:14px;}</style><button class="css-1up0vzc">凝聚期</button><button class="css-1up0vzc">游戏汇总</button></div><style data-emotion-css="1l4w6pd">.css-1l4w6pd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}</style><div class="css-1l4w6pd"><style data-emotion-css="yapsbb">.css-yapsbb{border-radius:9999px;width:100%;height:1px;--bg-opacity:1;background-color:rgba(247,250,252,var(--bg-opacity));background:linear-gradient( 270deg,#7f7fd5,#86a8e7,#91eac9 );}</style><div class="css-yapsbb"></div></div></div><div class="blog-content"><style data-emotion-css="19vk1qv">.css-19vk1qv{-webkit-scrollbar-width:thin;-moz-scrollbar-width:thin;-ms-scrollbar-width:thin;scrollbar-width:thin;-webkit-scrollbar-color:gray transparent;-moz-scrollbar-color:gray transparent;-ms-scrollbar-color:gray transparent;scrollbar-color:gray transparent;display:none;}.css-19vk1qv::-webkit-scrollbar{width:4px;}.css-19vk1qv::-webkit-scrollbar-track{background-color:transparent;}.css-19vk1qv::-webkit-scrollbar-thumb{border-radius:9999px;background-color:gray;}.css-19vk1qv::-webkit-scrollbar-button{width:0;height:0;}@media screen and (min-width:1280px){.css-19vk1qv{float:right;position:-webkit-sticky;position:sticky;top:100px;width:calc((100vw - 720px) / 2 - 80px);max-width:250px;margin-right:1rem;overflow:auto;word-break:break-word;max-height:calc(100vh - 200px);fontsize:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;border-left-width:4px;border-image:linear-gradient( 180deg,#7f7fd5,#86a8e7,#91eac9 );border-image-slice:1;}}</style><div class="css-19vk1qv"><style data-emotion-css="13af3fo">.css-13af3fo{margin-left:1rem;margin-right:1rem;}</style><div class="css-13af3fo"><style data-emotion-css="17i5xbf">.css-17i5xbf{font-weight:700;margin-bottom:0.5rem;font-size:1.125rem;--text-opacity:1;color:rgba(74,85,104,var(--text-opacity));}</style><h3 class="css-17i5xbf">目录</h3><style data-emotion-css="1me4zjn">.css-1me4zjn ul{margin-left:0.5rem;}.css-1me4zjn ul > li a:hover{color:#555555;}.css-1me4zjn ul > li a{-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);--text-opacity:1;color:rgba(160,174,192,var(--text-opacity));font-size:0.875rem;}.css-1me4zjn ul > li a[href=""]{font-size:0.95rem;color:#555555;}</style><div class="css-1me4zjn"><ul>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%94%BE%E9%A3%9E%E6%9C%BA">放飞机</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%9C%9F%E7%9C%9F%E5%81%87%E5%81%87">真真假假</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E4%BB%96%E4%BB%AC%E8%AE%A4%E8%AF%86%E4%BD%A0%E5%90%97">他们认识你吗？</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%84%9F%E8%A7%89%E5%A6%82%E4%BD%95">感觉如何？</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%88%91%E5%83%8F%E4%BB%80%E4%B9%88">我像什么？</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E4%B8%80%E5%85%83%E8%AE%B2%E5%BF%83%E4%BA%8B">一元讲心事</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%8C%9C%E7%8C%9C%E7%A5%9E%E7%A7%98%E4%BA%BA">猜猜神秘人</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%9C%80%E4%BD%B3%E4%BA%BA%E7%BC%98%E5%A5%96">最佳人缘奖</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E8%AE%A4%E8%AF%86%E4%BD%A0%E7%9C%9F%E5%A5%BD">认识你真好</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E4%BD%A0%E8%BF%98%E5%8F%AF%E6%B4%BB%E5%A4%9A%E4%B8%A4%E5%88%86%E9%92%9F">你还可活多两分钟！</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E5%BF%A0%E4%BA%BA%E4%B9%8B%E6%89%98">忠人之托</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%94%9F%E5%91%BD%E8%87%B3%E5%AE%9D">生命至宝</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%BE%8A%E7%9A%84%E5%A3%B0%E9%9F%B3">羊的声音</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E4%BC%98%E7%82%B9%E8%BD%B0%E7%82%B8">优点轰炸</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%B8%A9%E6%9A%96%E7%9A%84%E8%A1%A8%E6%83%85">温暖的表情</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%88%B1%E5%BF%83%E8%AF%B4%E8%AF%9A%E5%AE%9E%E8%AF%9D">爱心说诚实话</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E4%B8%8D%E8%83%BD%E6%B2%A1%E6%9C%89%E4%BD%A0">不能没有你</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%82%B9%E7%82%B9%E5%BF%83%E5%A3%B0">点点心声</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E5%93%91%E5%8F%A3%E5%AF%BB%E4%BA%BA">哑口寻人</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E5%9B%9E%E5%BA%94%E6%84%9F%E5%8F%97">回应感受</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%AD%A4%E6%83%85%E6%AD%A4%E6%99%AF">此情此景</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E8%AE%BE%E8%BA%AB%E5%A4%84%E5%9C%B0">设身处地</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E5%BF%83%E7%81%B5%E6%8D%95%E6%89%8B">心灵捕手</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E5%A5%BD%E7%A4%BC%E7%9B%B8%E9%80%81">好礼相送</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%A7%98%E5%AF%86%E5%A4%A7%E5%85%AC%E5%BC%80">秘密大公开</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E8%83%8C%E5%90%8E%E8%AF%B4%E4%BD%A0">背后说你</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%94%B9%E5%8F%98%E7%94%9F%E5%91%BD">改变生命</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E5%88%AB%E9%97%AE%E6%88%91%E6%98%AF%E8%B0%81">别问我是谁</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E6%8B%9C%E8%AE%BF%E5%86%9C%E5%9C%BA">拜访农场</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E4%B8%BA%E4%BD%A0%E6%84%9F%E6%81%A9">为你感恩</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E7%94%9F%E6%B4%BB%E9%A6%85%E9%A5%BC">生活馅饼</a></li>
+<li><a href="/ice-breaking-game/%E5%87%9D%E8%81%9A%E6%9C%9F/%E5%87%9D%E8%81%9A%E6%9C%9F%E6%B8%B8%E6%88%8F%E6%B1%87%E6%80%BB/#%E8%B0%A8%E6%85%8E%E8%A8%80%E8%AF%AD">谨慎言语</a></li>
+</ul></div></div></div><div class="css-1bdwg0l ek48yxb0"><div><style data-emotion-css="1kebwpo">.css-1kebwpo{font-size:1rem;word-break:break-word;}.css-1kebwpo h1 > a > svg,.css-1kebwpo h2 > a > svg,.css-1kebwpo h3 > a > svg,.css-1kebwpo h4 > a > svg,.css-1kebwpo h5 > a > svg,.css-1kebwpo h6 > a > svg{fill:#000;}.css-1kebwpo h1,.css-1kebwpo h2{font-size:1.25rem;font-weight:600;margin-top:1rem;margin-bottom:1rem;}.css-1kebwpo h3,.css-1kebwpo h4,.css-1kebwpo h5,.css-1kebwpo h6{font-size:1.125rem;margin-top:1.5rem;margin-bottom:1.5rem;font-weight:600;}@media (min-width:640px){.css-1kebwpo h1,.css-1kebwpo h2{font-size:1.5rem;}.css-1kebwpo h3,.css-1kebwpo h4,.css-1kebwpo h5,.css-1kebwpo h6{font-size:1.25rem;}}.css-1kebwpo a{color:#3737B9;}.css-1kebwpo a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1kebwpo p{margin:0.3rem;margin-top:0.75rem;margin-bottom:0.75rem;}.css-1kebwpo ul,.css-1kebwpo ol{margin:0.3rem;margin-left:2rem;}.css-1kebwpo li > p,.css-1kebwpo li > ul,.css-1kebwpo li > ol{margin-bottom:0;}.css-1kebwpo ol{list-style-type:decimal;}.css-1kebwpo ul{list-style-type:disc;}.css-1kebwpo ul>li::marker{content:'';}.css-1kebwpo blockquote{padding:0.5rem;background-color:#eee;margin:0.3rem;margin-top:0.5rem;margin-bottom:0.5rem;border-left-width:4px;border-color:#86a8e7;}.css-1kebwpo blockquote > p{margin:0.5rem;}.css-1kebwpo blockquote > h1,.css-1kebwpo blockquote > h2,.css-1kebwpo blockquote > h3,.css-1kebwpo blockquote > h4,.css-1kebwpo blockquote > h5{margin-top:0.5rem;margin-bottom:0.5rem;}.css-1kebwpo td,.css-1kebwpo th{padding-left:0.5rem;padding-right:0.5rem;padding-top:0.25rem;padding-bottom:0.25rem;border-width:1px;border-color:#86a8e7;}.css-1kebwpo tr:nth-of-type(even){background-color:#eee;}.css-1kebwpo th{background-color:#eee;}.css-1kebwpo table{margin-bottom:1.5rem;display:block;max-width:-webkit-fit-content;max-width:-moz-fit-content;max-width:fit-content;margin:0 auto;overflow-x:auto;white-space:nowrap;}.css-1kebwpo p > code,.css-1kebwpo li > code{padding-top:0.1rem;padding-bottom:0.1rem;padding-right:0.25rem;padding-left:0.25rem;border-radius:0.25rem;color:#3737B9;background-color:#eee;white-space:pre-line;}.css-1kebwpo pre.grvsc-container{margin-top:24px;margin-bottom:24px;}.css-1kebwpo hr{margin-top:24px;margin-bottom:24px;height:2px;border:none;background:linear-gradient( 270deg,#7f7fd5,#86a8e7,#91eac9 );}</style><div class="markdown css-1kebwpo"><p>游戏来源：
+<a href="https://hoc5.us/biblestudy/icebreaker/">破冰游戏（需要vpn）</a></p>
+<p>汇总游戏相当于直接复制链接内的，并非本网站记录的游戏，仅供参考</p>
+<h1 id="放飞机" style="position:relative;"><a href="#%E6%94%BE%E9%A3%9E%E6%9C%BA" aria-label="放飞机 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>放飞机</h1>
+<p>目的：组员互相认识</p>
+<p>时间：10分钟</p>
+<p>材料：纸和笔</p>
+<ol>
+<li>请组员在纸上写下自己的个人资料来形容自己的性格，资料越多越好。但不可写外貌特征，亦不可让别人看到纸上的内容。几分钟后，请组员将纸折成飞机。注意：飞机头不宜折得太尖。</li>
+<li>然后组员围大圈站好，带领者告诉他们：现在每只飞机内有一位乘客。请大家合上眼，带领者大叫：“1、2、3、起飞！”每人把飞机抛上天，在飞机着陆之前，带领者命令：“接机！”大家马上张开眼及捉住任何一只飞机。</li>
+<li>拆开纸飞机后，各人按纸上资料猜测这人是谁，写上那人的名字。然后重复以上步骤。最后大家轮流讲出纸上内容，一齐猜这人是谁。</li>
+</ol>
+<h1 id="真真假假" style="position:relative;"><a href="#%E7%9C%9F%E7%9C%9F%E5%81%87%E5%81%87" aria-label="真真假假 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>真真假假</h1>
+<p>目的：组员互相认识</p>
+<p>时间：10分钟</p>
+<p>材料：纸和笔</p>
+<ol>
+<li>分给每人4张纸及一支笔，各人分别在每张纸上写下一句有关自己的句子，其中3句是真的，一句是假的。</li>
+<li>写完后轮流讲出自己的句子。让别人猜猜哪一句是假的。</li>
+</ol>
+<h1 id="他们认识你吗" style="position:relative;"><a href="#%E4%BB%96%E4%BB%AC%E8%AE%A4%E8%AF%86%E4%BD%A0%E5%90%97" aria-label="他们认识你吗 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>他们认识你吗？</h1>
+<p>目的：认识更深</p>
+<p>时间：5~10分钟</p>
+<p>材料：10支笔及10张纸</p>
+<ol>
+<li>组员围圈或围桌而坐。组长预先将组员的名字分别写在纸上，分给各人。</li>
+<li>各人看过卡纸上人名后，写出3句有关他的印象或优点，然后传给下一个人继续写，直至传到“主角”手中为止。</li>
+</ol>
+<h1 id="感觉如何" style="position:relative;"><a href="#%E6%84%9F%E8%A7%89%E5%A6%82%E4%BD%95" aria-label="感觉如何 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>感觉如何？</h1>
+<p>目的：了解组员多一点</p>
+<p>时间：5~10分钟</p>
+<p>材料：录音机、8首乐曲的录音带、或纯音乐带、大量纸及笔</p>
+<ol>
+<li>每人派发5张纸及一支笔。</li>
+<li>播放音乐，请组员写下对每首音乐的感觉，也可用字或图画来表达。</li>
+<li>各人分享感觉。</li>
+</ol>
+<h1 id="我像什么" style="position:relative;"><a href="#%E6%88%91%E5%83%8F%E4%BB%80%E4%B9%88" aria-label="我像什么 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>我像什么？</h1>
+<p>目的：启发想像力</p>
+<p>时间：10-15分钟</p>
+<p>材料：一个大袋、内有钱包、玩具、茶包、胶布、钟、眼镜、面罩、地图任何杂物也可以）</p>
+<ol>
+<li>组员轮流在袋里拿出一件，向众人解释为什么那物件可以代表他现在的小组生活，或学业、事业、与神的关系、感情生活、家庭生活等。</li>
+</ol>
+<h1 id="一元讲心事" style="position:relative;"><a href="#%E4%B8%80%E5%85%83%E8%AE%B2%E5%BF%83%E4%BA%8B" aria-label="一元讲心事 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>一元讲心事</h1>
+<p>目的：组员互相认识</p>
+<p>时间：10分钟</p>
+<p>材料：一大堆不同年份铸造的一元硬币(硬币上有注明年份，最好是最近20年的。
+组员在组长手中抽一个一元硬币，然后讲述那年发生了什么令他难忘的事。</p>
+<h1 id="猜猜神秘人" style="position:relative;"><a href="#%E7%8C%9C%E7%8C%9C%E7%A5%9E%E7%A7%98%E4%BA%BA" aria-label="猜猜神秘人 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>猜猜神秘人</h1>
+<p>目的：了解对方</p>
+<p>时间：10-15分钟</p>
+<p>内容：</p>
+<ol>
+<li>每人发一张空白小卡片，写下现在你身上有的，但不易被发现的特征，但不能被遮盖或隐藏着的。</li>
+<li>准备一个小箱子或小袋子，收集所有人的卡片。 (或者是唱一首歌中，将卡片向左或向右传递，歌曲结束卡片也停止传递。)</li>
+<li>每人抽出一张卡片，猜一猜这个特征是属于谁的。 (或者是每人轮流猜出手中的卡片上的人)
+【活动意义】
+发现别人的不一样或发现别人的优点，能增进彼此间的关系，更能加添自己对周遭的事物，有高度的敏感度。</li>
+</ol>
+<h1 id="最佳人缘奖" style="position:relative;"><a href="#%E6%9C%80%E4%BD%B3%E4%BA%BA%E7%BC%98%E5%A5%96" aria-label="最佳人缘奖 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>最佳人缘奖</h1>
+<p>目的：彼此欣赏（可在认识期结束后玩）</p>
+<p>时间：10分钟</p>
+<p>材料：每人5张纸（另备20张纸）、笔、礼物一份</p>
+<p>内容：</p>
+<ol>
+<li>每人5张纸，如有需要可多取。</li>
+<li>组长在白板或壁报纸上写出以下的句子：“多谢———，当我————时，你——————，使我感到——。”</li>
+<li>各人思想，哪些组员曾在你身上施行恩惠：包括安慰、帮助、劝勉等，用上述句子简单表达出来，每写一人用一张纸。例如：“多谢秀秀，当我不懂得带领小组敬拜时，你花时间与我一起预备，使我感到支持及鼓励。”</li>
+<li>约5~10分钟后，组长收集纸张宣读内容，按名字把纸张交给各人。</li>
+<li>得纸最多的人，表示他被最多人欣赏，可致送一份礼物以示鼓励。</li>
+<li>最后，组长总结各人欣赏的时间种类，及这些行为对别人的影响，以肯定及强化他们对弟兄姊妹的服侍。</li>
+</ol>
+<h1 id="认识你真好" style="position:relative;"><a href="#%E8%AE%A4%E8%AF%86%E4%BD%A0%E7%9C%9F%E5%A5%BD" aria-label="认识你真好 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>认识你真好</h1>
+<p>目的：建立关系</p>
+<p>时间：15分钟</p>
+<p>材料：黑板或纸、笔</p>
+<p>内容：</p>
+<ol>
+<li>两人自由组合配对，用5分钟的时间了解对方，不拘形式。</li>
+<li>约5分钟后，各组说出交谈的主题，组长记录在黑板上。</li>
+<li>接着组长可约略说一番话：人的一生中都有几位互相信任的知己朋友，若现在这位同伴成为你的知己，你想了解他什么呢？要维持知己关系，你觉得什么最重要？再用5分钟讨论这问题。</li>
+<li>之后大家再集合分享，可能这次谈得更深入。组长把这次讨论内容记录在前次记录的旁边。</li>
+<li>一起讨论前后两次的记录，分享感受。</li>
+</ol>
+<h1 id="你还可活多两分钟" style="position:relative;"><a href="#%E4%BD%A0%E8%BF%98%E5%8F%AF%E6%B4%BB%E5%A4%9A%E4%B8%A4%E5%88%86%E9%92%9F" aria-label="你还可活多两分钟 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>你还可活多两分钟！</h1>
+<p>目的：组员互相加深认识</p>
+<p>时间：5－10分钟</p>
+<p>内容：</p>
+<ol>
+<li>每位组员有一张纸和一支笔。假设大家只剩两分钟性命，赶快抓紧时间写一封信。</li>
+<li>两分钟后，组长可邀请组员大声读出信中内容。但若组员感觉不方便读出，请尊重他/她的意愿，让他/她选择性地读出部分内容。</li>
+</ol>
+<h1 id="忠人之托" style="position:relative;"><a href="#%E5%BF%A0%E4%BA%BA%E4%B9%8B%E6%89%98" aria-label="忠人之托 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>忠人之托</h1>
+<p>目的：互相分享</p>
+<p>时间：15分钟</p>
+<p>内容：</p>
+<ol>
+<li>组员围圈坐下。组长请各人介绍自己身上一件值得纪念的东西。</li>
+<li>组员轮流选定一样随身物品向大家介绍。例如：为什么我喜欢这东西，对我有什么意义等。要留意听别人介绍自己的纪念物品。</li>
+<li>大家都介绍过以后，播放一段音乐，各人将这件物品送给一位值得信赖的人。音乐停播便停止交换。</li>
+<li>这时候，你便会看到谁是最被信赖的人了。然后大家归位，轮流将收到的物品再介绍一次，物归原主</li>
+</ol>
+<h1 id="生命至宝" style="position:relative;"><a href="#%E7%94%9F%E5%91%BD%E8%87%B3%E5%AE%9D" aria-label="生命至宝 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>生命至宝</h1>
+<p>目的：了解对方</p>
+<p>时间：10-15分钟</p>
+<p>内容：
+发给每位组员纸笔，请小组成员列出十件自己认为在生活中最重要的东西。这东西可以是无形的，如母爱﹑地位等；或者有形的，如服饰﹑汽车等。</p>
+<ol>
+<li>第一次分享 每位组员轮流说明列出这十件的理由。
+第一次取舍 请问组员如果他必须在这十件中，放弃五件，他会作什么样的决定﹖</li>
+<li>第二次分享 每位组员轮流说明取舍的理由。
+第二次取舍 请问组员如果他必须在这五件中，放弃三件，他会作什么样的决定﹖</li>
+<li>第三次分享 每位组员轮流说明取舍的理由。
+第三次取舍 请问组员如果他必须在最后两件中，放弃一件，他会作什么样的决定﹖</li>
+<li>第四次分享 每位组员轮流说明取舍的理由，并说明他做取舍的感受。
+带领小组讨论的注意事项：
+在分享时，由组长开始分享。这样的分享应该是具体﹑个人的感受。
+当小组成员分享时，不需加以评论；只需予以肯定﹑并鼓励分享。</li>
+</ol>
+<h1 id="羊的声音" style="position:relative;"><a href="#%E7%BE%8A%E7%9A%84%E5%A3%B0%E9%9F%B3" aria-label="羊的声音 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>羊的声音</h1>
+<p>目的：了解对方</p>
+<p>时间：10-15分钟</p>
+<p>步骤：</p>
+<ol>
+<li>先找一个人当牧羊人</li>
+<li>其他的人在牧羊人背后排程一排。轮流用假声音向牧羊人说话</li>
+<li>牧羊人猜说话人的名字，一直到猜对为止</li>
+</ol>
+<p>信息：（1）认识彼此；（2）要彼此更深认识，互动以至于更熟悉、更有默契，能分辨对方。</p>
+<h1 id="优点轰炸" style="position:relative;"><a href="#%E4%BC%98%E7%82%B9%E8%BD%B0%E7%82%B8" aria-label="优点轰炸 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优点轰炸</h1>
+<p>目的：了解对方</p>
+<p>时间：10-15分钟</p>
+<p>道具：纸和笔</p>
+<p>内容：</p>
+<ol>
+<li>组员围成一个圆圈坐。给每位组员发一张纸，请他们在纸上写上自己的名字。</li>
+<li>当领队说：「开始」，就把纸传给右边的人。当你拿到对方的纸张后，写下你欣赏他/她的一点，例如聪明、温柔、关心人、有幽默感等。</li>
+<li>写完之后，领队会再说：「开始」，然后就再把纸传给右边的人。我们会一直往右边传，直到拿回自己的纸张。</li>
+<li>每个人拿回自己的纸张后，轮流分享他们自己纸张上的内容。</li>
+<li>每三位分享完，小组就一起为他们祝福祷告。</li>
+</ol>
+<h1 id="温暖的表情" style="position:relative;"><a href="#%E6%B8%A9%E6%9A%96%E7%9A%84%E8%A1%A8%E6%83%85" aria-label="温暖的表情 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>温暖的表情</h1>
+<p>目的：学习彼此欣赏</p>
+<p>时间：15分钟</p>
+<p>内容：</p>
+<ol>
+<li>围圈坐，其中一人在圈中间。</li>
+<li>轮流说出圈中人值得欣赏之处。</li>
+<li>直至每个人都被提及。</li>
+<li>以祷告结束。
+变化：</li>
+<li>可以在组员生日当天，以他/她为主角。</li>
+<li>可指定在某些场合说出对组员所欣赏之处。</li>
+</ol>
+<h1 id="爱心说诚实话" style="position:relative;"><a href="#%E7%88%B1%E5%BF%83%E8%AF%B4%E8%AF%9A%E5%AE%9E%E8%AF%9D" aria-label="爱心说诚实话 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>爱心说诚实话</h1>
+<p>目的：诉衷情、反省、检讨</p>
+<p>时间：10-15分钟</p>
+<p>材料：纸、笔和胶纸</p>
+<p>内容：</p>
+<ol>
+<li>游戏前，每人拿一张纸，贴上双面胶，贴在另一组员的背部衣领之下。</li>
+<li>在10-15分钟内，组员挑选一些人，在他们背后简单写出对他的感觉或性格的称赞或批评，无需署名。</li>
+<li>限时完毕，各人方可将背后纸条撕下来看。</li>
+<li>总结时，鼓励组员反省自己所得的评语，虽然别人未必看得准确，但可作为参考。好的要坚持，不好的要改善。</li>
+<li>提议：查考林前12章，互相勉励。</li>
+</ol>
+<h1 id="不能没有你" style="position:relative;"><a href="#%E4%B8%8D%E8%83%BD%E6%B2%A1%E6%9C%89%E4%BD%A0" aria-label="不能没有你 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>不能没有你</h1>
+<p>目的：表达心中重视的东西</p>
+<p>时间：15分钟</p>
+<p>材料：纸笔</p>
+<p>内容：</p>
+<ol>
+<li>组长说：“看看什么事你少不了的？“假设组员家里现在发生火灾，必须尽快抢救家中三样东西。用30秒思考，然后写在纸上。</li>
+<li>组员逐一分享及解释自己写下的东西，其他组员可发问。
+改变：</li>
+<li>将纸混合抽取，让组员猜猜此纸属谁，这可加强游戏气氛。</li>
+</ol>
+<h1 id="点点心声" style="position:relative;"><a href="#%E7%82%B9%E7%82%B9%E5%BF%83%E5%A3%B0" aria-label="点点心声 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>点点心声</h1>
+<p>目的：分享自己看重的事</p>
+<p>时间：15分钟</p>
+<p>材料：扑克牌，问题卡</p>
+<p>内容：</p>
+<ol>
+<li>组员围圈而坐。</li>
+<li>把扑克牌洗一次，放在中间。</li>
+<li>每人轮流取一张，依牌的号数取问题卡，并回答问题。</li>
+<li>若取得号数已出现过，可再取另一张。
+问题卡：</li>
+<li>哪件事令你最自豪？</li>
+<li>若你能改变两样有关学校或工作的事，你会改变哪样？</li>
+<li>最能令你发笑的三个方法？</li>
+<li>你在今年做过最特别的一件事什么事？</li>
+<li>你最欣赏哪五部影视作品？</li>
+<li>你心目中最尊敬的朋友是谁？他哪方面值得你尊敬？</li>
+<li>你最喜爱在超级市场买什么？</li>
+<li>你有过养类似“狗”的宠物吗？</li>
+<li>由现在至未来十年内，你有什么人生大计？请分享。</li>
+</ol>
+<h1 id="哑口寻人" style="position:relative;"><a href="#%E5%93%91%E5%8F%A3%E5%AF%BB%E4%BA%BA" aria-label="哑口寻人 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>哑口寻人</h1>
+<p>目的：认识其他人</p>
+<p>时间：10-20分钟</p>
+<p>材料：每位组员一张字条，并写上“表情”、“工作”、“住址”、“嗜好”四个项目</p>
+<p>内容：
+组长说：“有时候寻人好难，如果不准讲话就更难”。</p>
+<ol>
+<li>每人将自己的名字及以上4项资料填与字条内，然后折起。</li>
+<li>把组员分为两组（每组约5人）。</li>
+<li>以比赛的形式进行。第一组先派一位代表，抽出对方一位组员的字条，并在15秒内按指示演绎此组员惯常的表情、工作、住址或嗜好，让其他组员猜这人是谁。代表不可出声，只可用手势。</li>
+<li>两组轮流进行，次数视乎时间和兴致。最后比较哪一组猜中次数较多。注意事项：游戏着重考虑组员对其他人的观察力，不容许有取笑的态度。</li>
+</ol>
+<h1 id="回应感受" style="position:relative;"><a href="#%E5%9B%9E%E5%BA%94%E6%84%9F%E5%8F%97" aria-label="回应感受 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>回应感受</h1>
+<p>目的：让组员学习表达及回应感受</p>
+<p>时间：10-15分钟</p>
+<p>材料：每个组员两张纸及一支笔，将下列的大字写在一张大纸上，放在组员中间（或写在白板上）。
+忧愁 被拒绝 罪咎 需医治
+悲伤 要有爱 要安慰 很痛苦
+平安 被接纳 需盼望 求宽恕</p>
+<p>内容：
+组长说：“你这周的内心世界如何呢？”</p>
+<ol>
+<li>组员围圈坐，将自己现在的心情写在第一张纸条上。</li>
+<li>投在组员中间，组员随意取出一张，猜是谁的纸。</li>
+<li>接着组员可以在第二张纸上写出一些鼓励的话或经文送给那个组员。</li>
+<li>组员分享现状。</li>
+<li>若有十分忧伤的组员，可以按手为他祷告。</li>
+</ol>
+<h1 id="此情此景" style="position:relative;"><a href="#%E6%AD%A4%E6%83%85%E6%AD%A4%E6%99%AF" aria-label="此情此景 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>此情此景</h1>
+<p>目的：互相认识，加深了解</p>
+<p>时间：10分钟</p>
+<p>材料：纸笔</p>
+<p>内容：</p>
+<ol>
+<li>先由一人说出一个情景，例如：你在巴士站等车，有一位陌生人向你拿十元坐车，你会如何处理？</li>
+<li>请各人把自己的处理方法写在纸上。收集后，每人抽一张，轮流讲出他手上的处理方法，并猜这做法是谁人。如猜不中要罚。建议：在猜测过程中，可解释你的理由。</li>
+</ol>
+<h1 id="设身处地" style="position:relative;"><a href="#%E8%AE%BE%E8%BA%AB%E5%A4%84%E5%9C%B0" aria-label="设身处地 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设身处地</h1>
+<p>目的：了解各人不同的处事方法</p>
+<p>时间：10-15分钟</p>
+<p>材料：纸笔</p>
+<p>内容：</p>
+<ol>
+<li>左右平均分为两组，面对面坐下。</li>
+<li>各在纸上写下自己的问题或苦况，交给对面的组员，他便要设身处地，把自己代入问题中，写出处理方法。</li>
+<li>最后互相交换处理方法，讨论。</li>
+</ol>
+<h1 id="心灵捕手" style="position:relative;"><a href="#%E5%BF%83%E7%81%B5%E6%8D%95%E6%89%8B" aria-label="心灵捕手 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>心灵捕手</h1>
+<p>目的：体会与人亲近的经验，训练简洁表达字的感受</p>
+<p>时间：15分钟</p>
+<p>内容：</p>
+<ol>
+<li>每人寻找一个最陌生的组员，交谈约5分钟。</li>
+<li>
+<p>每组6人，分享一下问题：</p>
+<ol>
+<li>你与陌生人接触时有何感受？</li>
+<li>迟到进入会场有何感受？</li>
+<li>听到团友或组员用温柔的声调呼唤自己的名字时，有何感受？</li>
+<li>与家人争执而勉强从命时，有何感受？</li>
+<li>与同事/上司争执而勉强从命时，有何感受？</li>
+<li>有人与你谈论信仰，你坚持“自己的意见”，事后你有何感受</li>
+</ol>
+</li>
+</ol>
+<h1 id="好礼相送" style="position:relative;"><a href="#%E5%A5%BD%E7%A4%BC%E7%9B%B8%E9%80%81" aria-label="好礼相送 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>好礼相送</h1>
+<p>目的：关心别人的需要</p>
+<p>时间：15分钟</p>
+<p>材料：“送礼物单”，“收礼物单”，笔</p>
+<p>内容：</p>
+<ol>
+<li>每人一份“送礼物单”。</li>
+<li>各人写下每位组员的姓名（自己除外），在每个名字后面，写下你想送给他的礼物。</li>
+<li>再发给每人一份“收礼物单”，再写一遍全体组员的姓名（自己除外）。</li>
+<li>请一位想得到礼物的组员站出来，大家开始送礼物给他，他可以把礼物一一记录在“收礼物单”里。</li>
+<li>每人可轮流接受礼物，并分享对礼物的看法和所送礼物的原因，也可表示对那些礼物的喜好程度。</li>
+</ol>
+<h1 id="秘密大公开" style="position:relative;"><a href="#%E7%A7%98%E5%AF%86%E5%A4%A7%E5%85%AC%E5%BC%80" aria-label="秘密大公开 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>秘密大公开</h1>
+<p>目的：加深互相信任</p>
+<p>时间：15分钟</p>
+<p>材料：每人一份同式样的纸笔</p>
+<p>内容：</p>
+<ol>
+<li>各组员以不记名方式，写下一件个人秘密，每人抽取一张读出来，并分享加入自己也有如此秘密的话，有何感受，如何处理。</li>
+<li>若抽到自己的纸，全部重新搅浑，并重新抽取。</li>
+<li>态度要严肃，不可写下开玩笑的事件。</li>
+</ol>
+<h1 id="背后说你" style="position:relative;"><a href="#%E8%83%8C%E5%90%8E%E8%AF%B4%E4%BD%A0" aria-label="背后说你 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>背后说你</h1>
+<p>目的：领悟、观察</p>
+<p>时间：10-15分钟</p>
+<p>材料：纸笔、胶纸</p>
+<p>内容：</p>
+<ol>
+<li>每人写下一位当天出席者的名字，随意贴在别人背后，不要让他看见。</li>
+<li>大家站在场中央，尽快猜测自己背上的人名。</li>
+<li>可向别人问是非题，每次只可问一题，从答案中猜出自己背后所贴的人名是谁；一个问题只可以猜一次。</li>
+<li>待大家都猜到背上人名，游戏便完结。</li>
+<li>最后猜中的组员要唱歌或请吃东西，或其他惩罚。</li>
+</ol>
+<h1 id="改变生命" style="position:relative;"><a href="#%E6%94%B9%E5%8F%98%E7%94%9F%E5%91%BD" aria-label="改变生命 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>改变生命</h1>
+<p>目的：了解小组对组员的影响</p>
+<p>时间：15分钟</p>
+<p>内容：</p>
+<ol>
+<li>组员回答：“若你需要选一种动物去形容小组怎样改造你的生命，你会选择什么”</li>
+<li>
+<p>可分享为何如此回答。举例如下：</p>
+<ol>
+<li>色彩鲜艳的孔雀：因为有人赞我漂亮，并让我相信我可以从此改变生命。</li>
+<li>可爱的河马：因为小组让我可以面对困难，让我活在神的大爱之下。</li>
+<li>黑豹：因为小组助我看清楚自己的优点和缺点，我可以持着我的目标前进。</li>
+<li>跳舞中的熊：因为小组教我在痛苦中跳舞，寻到快乐，并助我去爱与被爱。</li>
+<li>吼叫的狮子：因为小组让我自由在草原上奔跑，再不需要为自己忧虑。</li>
+<li>野生鹰：因为小组帮我伸展翅膀，并教我重新滑翔。</li>
+<li>长颈鹿：因为小组助我重新抬头和伸直颈项。</li>
+<li>湿水鸭：因为小组教我享受天气，无论是晴天或阴天，在患难中犹如暴风雨中一只喜乐的鸭。</li>
+<li>恋爱中的鸵鸟：因为小组非常爱我，所以我可以伸出头来，找到一个全新的生存目标。</li>
+</ol>
+</li>
+</ol>
+<h1 id="别问我是谁" style="position:relative;"><a href="#%E5%88%AB%E9%97%AE%E6%88%91%E6%98%AF%E8%B0%81" aria-label="别问我是谁 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>别问我是谁</h1>
+<p>目的：考观察力</p>
+<p>时间：10-15分钟</p>
+<p>材料：纸条</p>
+<p>内容：</p>
+<ol>
+<li>组长预先用小字条写下全组组员的名字（当天没有出现的也可写上）。然后让组员分抽一张。</li>
+<li>当你看到那组员的名字后，便想想他有何特征。例如：口头禅、小动作等，然后每人轮流以三个动作或发声来形容那个人，各人完成才揭晓。</li>
+</ol>
+<h1 id="拜访农场" style="position:relative;"><a href="#%E6%8B%9C%E8%AE%BF%E5%86%9C%E5%9C%BA" aria-label="拜访农场 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>拜访农场</h1>
+<p>目的：考验听觉</p>
+<p>时间：10-15分钟</p>
+<p>材料：手帕</p>
+<p>内容：</p>
+<ol>
+<li>组员围成一圈，一人蒙眼站在中间作农夫。</li>
+<li>瞎眼农夫慢慢走到一个人面前，组长说出一种牲畜的名字，那个人要扮牲畜叫声，让瞎眼农夫猜他是谁。</li>
+<li>若猜中，两人互换位置，猜不出仍旧继续下去。</li>
+</ol>
+<h1 id="为你感恩" style="position:relative;"><a href="#%E4%B8%BA%E4%BD%A0%E6%84%9F%E6%81%A9" aria-label="为你感恩 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>为你感恩</h1>
+<p>目的：提醒组员，有许多事情值得向神感恩，可能是他并不察觉的</p>
+<p>时间：10-15分钟</p>
+<p>材料：纸笔</p>
+<p>内容：</p>
+<ol>
+<li>至少三人一组，每人一张纸一支笔。</li>
+<li>各人写下自己的名字，三人互相交换。</li>
+<li>拿到别人的名字后，为他写下值得向神感恩之处，把纸张归还给他。</li>
+<li>每人轮流读出别人为他写的感恩之处。</li>
+<li>
+<p>一起讨论和回应：</p>
+<ol>
+<li>你同意别人为你写的感恩事项吗？</li>
+<li>你对自己有什么新的发现？</li>
+<li>还有什么事别人未提出，而你自己觉得需要感恩的？</li>
+</ol>
+</li>
+<li>结束时一起祷告，每人说一两句话，向天父表达感恩之心。</li>
+</ol>
+<h1 id="生活馅饼" style="position:relative;"><a href="#%E7%94%9F%E6%B4%BB%E9%A6%85%E9%A5%BC" aria-label="生活馅饼 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>生活馅饼</h1>
+<p>目的：帮助个人具体、客观、系统地分析与检查自己的生活</p>
+<p>时间：15分钟</p>
+<p>材料：纸笔</p>
+<p>内容：</p>
+<ol>
+<li>组长在黑板或纸上画一个大圆圈，代表一天24小时的“生活馅饼”。</li>
+<li>
+<p>每人在纸上画出自己的馅饼，估计自己在下列各个选项上所占用的时间，按比例加以分割（画在各人的纸上）：</p>
+<ol>
+<li>睡觉</li>
+<li>学校</li>
+<li>课外补习</li>
+<li>家庭作业</li>
+<li>朋友（聊天、下棋、打球）</li>
+<li>家庭琐事（洗碗、洗衣服等）</li>
+<li>独处（阅读、玩乐）</li>
+<li>与家人共处</li>
+<li>其他</li>
+</ol>
+</li>
+<li>
+<p>问题：</p>
+<ol>
+<li>你对你目前使用时间的情形满意吗？</li>
+<li>在你的理想中，应该怎样使用时间？现在再画一个圆圈代表你理想中的生活馅饼。</li>
+<li>你能不能采取行动，改变你目前的生活馅饼，使它更接近你的理想呢？</li>
+</ol>
+</li>
+</ol>
+<p>备注：
+这种方法可以用来分析时间、金钱、精力。</p>
+<h1 id="谨慎言语" style="position:relative;"><a href="#%E8%B0%A8%E6%85%8E%E8%A8%80%E8%AF%AD" aria-label="谨慎言语 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>谨慎言语</h1>
+<p>目的：提醒组员谨慎言语</p>
+<p>时间：15分钟</p>
+<p>材料：大手帕一条；椅子两把，摆于圈子中央</p>
+<p>内容：</p>
+<ol>
+<li>大家围坐成圈，每圈最多二十人。</li>
+<li>同圈的人彼此认识，必须能认出每个人都名字和声音。</li>
+<li>各圈由一个人带领，他指定一位同学出来当“牛魔王”，带领着用大手帕蒙住“牛魔王”的眼睛，扶着他原地旋转几圈。由他随意一指。被指到的组员要出来，和他相对坐下，接受牛魔王的“审问”。牛魔王要用严厉的声音说：“你是谁？我要吃掉你。”这人要回答：“我不告诉你。”然后再随意问三个问题，如：“你生了几头小牛？”“你那么凶干什么？”“你今年几岁了？”牛魔王要根据他的声音猜他的名字。如果猜对，就是他的言语不够谨慎，带领着宣布他被牛魔王吃掉，换他出来当牛魔王。如果牛魔王连续三个人都猜不出来，请牛魔王念圣经箴言十章19节，然后带领者另指定一位当牛魔王。</li>
+</ol>
+<style class="grvsc-styles">
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line > * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: ' ';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting > .grvsc-code > .grvsc-line::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+</style></div></div></div></div><div class="css-1bdwg0l ek48yxb0"><div><style data-emotion-css="17t5ffy">.css-17t5ffy{margin-top:1rem;margin-bottom:1rem;}</style><div class="css-17t5ffy"><div class="css-1l4w6pd"><div class="css-yapsbb"></div></div></div><style data-emotion-css="i1cgbm">.css-i1cgbm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;margin-top:1rem;padding-left:0.5rem;padding-right:0.5rem;}</style><div class="css-i1cgbm"><style data-emotion-css="rk0yc0">.css-rk0yc0{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.25rem;padding-bottom:0.25rem;margin-top:0.5rem;margin-bottom:0.5rem;margin-left:0.5rem;border-radius:0.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));background-color:#6E7783;}</style><button class="css-rk0yc0"><style data-emotion-css="u7tj59">.css-u7tj59{fill:currentColor;margin-top:auto;margin-bottom:auto;margin-right:0.25rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="css-u7tj59" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg>分享<!-- -->链接</button></div></div><style data-emotion-css="14e3tt2">.css-14e3tt2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-left:0.5rem;padding-right:0.5rem;}</style><div class="css-14e3tt2"><style data-emotion-css="1cwag5x">.css-1cwag5x{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.25rem;padding-bottom:0.25rem;margin-top:0.5rem;margin-bottom:0.5rem;border-radius:0.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));background-color:#FF813E;}</style><a rel="noopener noreferrer" class="css-1cwag5x"><style data-emotion-css="9u48bm">.css-9u48bm{margin-right:0.5rem;}</style><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee" class="css-9u48bm"/><span>喝杯咖啡</span></a></div></div></div></div><div class="css-1bdwg0l ek48yxb0"><style data-emotion-css="17t1oy1">.css-17t1oy1{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap-reverse;-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse;margin-left:0.5rem;margin-right:0.5rem;margin-top:1rem;}@media (min-width:768px){.css-17t1oy1{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}}</style><div class="css-17t1oy1 e1qauygv0"><style data-emotion-css="1pwr1ry">.css-1pwr1ry{width:100%;margin:0.5rem;}@media (min-width:768px){.css-1pwr1ry{width:50%;margin:1rem;}}</style><div class="css-1pwr1ry e1qauygv1"><style data-emotion-css="vl2eok">.css-vl2eok{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);text-align:left;width:100%;height:100%;padding:0.5rem;background-color:#eee;border-radius:0.25rem;border-left-width:4px;border-color:#86a8e7;}.css-vl2eok:hover{background-color:#ddd;}</style><a rel="prev" class="css-vl2eok" href="/ice-breaking-game/凝聚期/猜谜语/"><style data-emotion-css="19o7xeo">.css-19o7xeo{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;margin-right:1rem;margin-left:0.5rem;height:100%;}</style><div class="css-19o7xeo"><style data-emotion-css="11za1ik">.css-11za1ik{width:2rem;height:2rem;margin-top:auto;margin-bottom:auto;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-11za1ik" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M872 474H286.9l350.2-304c5.6-4.9 2.2-14-5.2-14h-88.5c-3.9 0-7.6 1.4-10.5 3.9L155 487.8a31.96 31.96 0 0 0 0 48.3L535.1 866c1.5 1.3 3.3 2 5.2 2h91.5c7.4 0 10.8-9.2 5.2-14L286.9 550H872c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"></path></svg></div><style data-emotion-css="v38or">.css-v38or{display:inline-block;margin-top:0.5rem;margin-bottom:0.5rem;}</style><div class="css-v38or"><style data-emotion-css="2m7hin">.css-2m7hin{color:#3737B9;}</style><p class="css-2m7hin">上一个</p><p>猜谜语</p></div></a></div><div class="css-1pwr1ry e1qauygv1"><style data-emotion-css="xhvfnc">.css-xhvfnc{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);text-align:right;width:100%;height:100%;padding:0.5rem;background-color:#eee;border-radius:0.25rem;border-right-width:4px;border-color:#86a8e7;}.css-xhvfnc:hover{background-color:#ddd;}</style><a rel="next" class="css-xhvfnc" href="/ice-breaking-game/线上/线上游戏图片集合/"><div class="css-v38or"><p class="css-2m7hin">下一个</p><p>线上游戏图片集合</p></div><div class="css-19o7xeo"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-11za1ik" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg></div></a></div></div><style data-emotion-css="14yohw7">.css-14yohw7{width:100%;max-width:768px;padding-left:1rem;padding-right:1rem;margin-left:auto;margin-right:auto;padding-top:2rem;margin-top:0.5rem;margin-bottom:1rem;}@media (min-width:768px){.css-14yohw7{padding-left:0;padding-right:0;padding-top:3rem;}}</style><div class="css-14yohw7 ed1ahok0"><style data-emotion-css="180ky7f">.css-180ky7f{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:0.5rem;padding-right:0.5rem;}@media (min-width:768px){.css-180ky7f{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}</style><div class="css-180ky7f ed1ahok1"><style data-emotion-css="p5b1u1">.css-p5b1u1{border-radius:9999px;border-width:1px;--border-opacity:1;border-color:rgba(214,188,250,var(--border-opacity));margin-right:2rem;margin-bottom:0.5rem;}@media (min-width:768px){.css-p5b1u1{margin-bottom:1rem;}}</style><div class="css-p5b1u1 gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:128px;height:128px"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EABcBAQEBAQAAAAAAAAAAAAAAAAIAAQP/2gAMAwEAAhADEAAAAeghrNexE5RkKRzz/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQMAAhETMv/aAAgBAQABBQJjcNHaY9dtT52MJ40MM//EABgRAQADAQAAAAAAAAAAAAAAAAABAhES/9oACAEDAQE/AcdQsx//xAAbEQEAAAcAAAAAAAAAAAAAAAAAAQMREiExMv/aAAgBAgEBPwGuFyVyjt//xAAbEAADAAIDAAAAAAAAAAAAAAAAARECECExMv/aAAgBAQAGPwKEmnkuUzzKdje//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERMUFhIf/aAAgBAQABPyFLl1aTO3SinaD8HlLzUkJJaO2/RLG9aP/aAAwDAQACAAMAAAAQ4BD9/8QAGREBAQEAAwAAAAAAAAAAAAAAAQARITFh/9oACAEDAQE/EDWre03iBnV//8QAGhEAAwADAQAAAAAAAAAAAAAAAAERITFRcf/aAAgBAgEBPxCIaK4Ll6bj/8QAHBABAQACAwEBAAAAAAAAAAAAAREAITFRYUFx/9oACAEBAAE/EDZIbPzL9ySO8ZecOhVA5XvmGuw2Kv5hHYuOpCQetzL2iHSu8G87Dn//2Q==" alt="profileImg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/6dc0c/timg.jpg 1x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/cc017/timg.jpg 1.5x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/0c30b/timg.jpg 2x" /><img loading="lazy" width="128" height="128" srcset="/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/6dc0c/timg.jpg 1x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/cc017/timg.jpg 1.5x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/0c30b/timg.jpg 2x" src="/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/6dc0c/timg.jpg" alt="profileImg" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div><span>Written by </span><style data-emotion-css="1t4jyca">.css-1t4jyca{display:inline-block;font-size:1.25rem;font-weight:700;border-radius:9999px;margin-bottom:0.5rem;padding-left:0.75rem;padding-right:0.75rem;--bg-opacity:1;background-color:rgba(237,242,247,var(--bg-opacity));color:#3737B9;}</style><p class="css-1t4jyca">@<!-- -->zhuguibiao</p><style data-emotion-css="vg2p6i">.css-vg2p6i{font-size:0.875rem;font-weight:400;margin-bottom:0.5rem;}</style><div class="css-vg2p6i">An icebreaker game website serving the jh</div></div></div><style data-emotion-css="1air669">.css-1air669{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-left:0.5rem;margin-right:0.5rem;}</style><div class="css-1air669"><div class="css-yapsbb"></div></div><style data-emotion-css="1baulvz">.css-1baulvz{display:inline-block;}</style><a title="github Link" href="https://github.com/zhuguibiao/ice-breaking-game" class="css-1baulvz"><style data-emotion-css="vnd1fq">.css-vnd1fq{width:2rem;height:2rem;margin-top:1rem;margin-left:1rem;-webkit-transition:all 300ms cubic-bezier(0,0,0.2,1);transition:all 300ms cubic-bezier(0,0,0.2,1);color:#888;}.css-vnd1fq:hover{color:#000;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="css-vnd1fq" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a title="twitter Link" href="https://twitter.com/zhuguibiao" class="css-1baulvz"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="css-vnd1fq" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></div></div></div><style data-emotion-css="xgi74q">.css-xgi74q{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:fixed;bottom:0;right:0;padding-right:1.5rem;padding-bottom:1.5rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style><div class="css-xgi74q e98h7c80"><style data-emotion-css="1a68u">.css-1a68u{box-shadow:0 2px 2px 0 rgba(0,0,0,0.15);-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#636363;font-size:0.75rem;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.5rem;padding-bottom:0.5rem;border-radius:9999px;--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;-webkit-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));-ms-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-content:flex-end;-ms-flex-line-pack:end;align-content:flex-end;z-index:100;}.css-1a68u:hover{background-color:#404040;color:#FFFFFF;}.css-1a68u:hover{--transform-scale-x:1.05;--transform-scale-y:1.05;}</style><button title="change to darkmode" class="css-1a68u"><style data-emotion-css="1alqh2e">.css-1alqh2e{fill:currentColor;--text-opacity:1;color:rgba(246,224,94,var(--text-opacity));width:1rem;height:1rem;margin-top:auto;margin-bottom:auto;margin-left:0;margin-right:0;}@media (min-width:768px){.css-1alqh2e{display:inline-block;margin-left:0.25rem;margin-right:0.25rem;}}</style><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="css-1alqh2e" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><style data-emotion-css="flxr9x">.css-flxr9x{display:none;margin-right:0;}@media (min-width:768px){.css-flxr9x{display:inline-block;margin-right:0.25rem;}}</style><span class="css-flxr9x">夜晚</span></button><style data-emotion-css="15afv4q">.css-15afv4q{box-shadow:0 2px 2px 0 rgba(0,0,0,0.15);-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#636363;font-size:0.75rem;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.5rem;padding-bottom:0.5rem;border-radius:9999px;--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;-webkit-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));-ms-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));cursor:pointer;margin-left:0.5rem;margin-top:auto;margin-bottom:auto;z-index:100;}.css-15afv4q:hover{background-color:#404040;color:#FFFFFF;}.css-15afv4q:hover{--transform-scale-x:1.05;--transform-scale-y:1.05;}</style><button title="top page" class="css-15afv4q"><style data-emotion-css="13htjwu">.css-13htjwu{width:1rem;height:1rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-13htjwu" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"></path></svg></button></div><style data-emotion-css="1k8xcyw">.css-1k8xcyw{text-align:center;padding-top:2rem;padding-bottom:2rem;bottom:0;}</style><footer class="css-1k8xcyw"><style data-emotion-css="1xju3od">.css-1xju3od{font-size:0.75rem;font-weight:700;}</style><a href="https://github.com/zhuguibiao/ice-breaking-game" class="css-1xju3od">©zhuguibiao</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-221286010-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/凝聚期/凝聚期游戏汇总/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-c7ae2152ffca599026ed.js"],"app":["/app-3f8f434f3e0ae3f17e4a.js"],"component---src-pages-404-js":["/component---src-pages-404-js-3d3acbce61492bb0e540.js"],"component---src-pages-index-js":["/component---src-pages-index-js-225fd99368612ba6930f.js"],"component---src-pages-search-js":["/component---src-pages-search-js-920fbd86ef556d1a0fc4.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-fc1737e2369fba6f7e6c.js"],"component---src-templates-category-js":["/component---src-templates-category-js-d603092296263a3fb0b4.js"]};/*]]>*/</script><script src="/ice-breaking-game/polyfill-c7ae2152ffca599026ed.js" nomodule=""></script><script src="/ice-breaking-game/component---src-templates-blog-post-js-fc1737e2369fba6f7e6c.js" async=""></script><script src="/ice-breaking-game/7a297f752dcfe258c0b0106d89edb3a916af916e-4dfe69fa6f72a652e343.js" async=""></script><script src="/ice-breaking-game/commons-9c46c4e4aadc6f60ac65.js" async=""></script><script src="/ice-breaking-game/a0fb4d8f-99565716b20eaecea97d.js" async=""></script><script src="/ice-breaking-game/76ed74f8-43f7f23211125c9a1934.js" async=""></script><script src="/ice-breaking-game/ff08cc1e-d4f433c77082a977d2a7.js" async=""></script><script src="/ice-breaking-game/app-3f8f434f3e0ae3f17e4a.js" async=""></script><script src="/ice-breaking-game/styles-1043fb1b9b9e69356781.js" async=""></script><script src="/ice-breaking-game/framework-69a52ed48f4a92a81de1.js" async=""></script><script src="/ice-breaking-game/webpack-runtime-9c1db2b860cd80d581f6.js" async=""></script></body></html>
