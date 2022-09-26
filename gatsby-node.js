@@ -48,7 +48,6 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
     const posts = result.data.postsRemark.edges
-    // console.log(posts)
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node

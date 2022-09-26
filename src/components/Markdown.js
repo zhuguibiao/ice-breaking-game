@@ -50,16 +50,16 @@ const Markdown = ({ html }) => {
 
     a {
       color: ${isDarkMode
-        ? darkModeColor.textColor1
-        : whiteModeColor.textColor1};
+      ? darkModeColor.textColor1
+      : whiteModeColor.textColor1};
     }
     a:hover {
       text-decoration: underline;
     }
     p {
       margin: 0.3rem;
-      margin-top: 0.75rem;
-      margin-bottom: 0.75rem;
+      // margin-top: 0.75rem;
+      // margin-bottom: 0.75rem;
     }
     ul,
     ol {
@@ -71,14 +71,15 @@ const Markdown = ({ html }) => {
     li > ol {
       margin-bottom: 0;
     }
+    li > ul {
+      margin-left: 1rem;
+    }
     ol {
       list-style-type: decimal;
     }
     ul {
-      list-style-type: disc;
-    }
-    ul>li::marker{
-      content: '';
+      // list-style-type: disc;
+      list-style: none;
     }
     blockquote {
       padding: 0.5rem;
@@ -88,8 +89,8 @@ const Markdown = ({ html }) => {
       margin-bottom: 0.5rem;
       border-left-width: 4px;
       border-color: ${isDarkMode
-        ? darkModeColor.mainColor2
-        : whiteModeColor.mainColor2};
+      ? darkModeColor.mainColor2
+      : whiteModeColor.mainColor2};
     }
     blockquote > p {
       margin: 0.5rem;
@@ -110,8 +111,8 @@ const Markdown = ({ html }) => {
       padding-bottom: 0.25rem;
       border-width: 1px;
       border-color: ${isDarkMode
-        ? darkModeColor.mainColor2
-        : whiteModeColor.mainColor2};
+      ? darkModeColor.mainColor2
+      : whiteModeColor.mainColor2};
     }
     tr:nth-of-type(even) {
       background-color: ${isDarkMode ? "#333" : "#eee"};
@@ -136,8 +137,8 @@ const Markdown = ({ html }) => {
       padding-left: 0.25rem;
       border-radius: 0.25rem;
       color: ${isDarkMode
-        ? darkModeColor.textColor1
-        : whiteModeColor.textColor1};
+      ? darkModeColor.textColor1
+      : whiteModeColor.textColor1};
       background-color: ${isDarkMode ? "#333" : "#eee"};
       white-space: pre-line;
     }
@@ -155,16 +156,16 @@ const Markdown = ({ html }) => {
       background: linear-gradient(
         270deg,
         ${isDarkMode
-          ? darkModeColor.mainColor1 +
-            "," +
-            darkModeColor.mainColor2 +
-            "," +
-            darkModeColor.mainColor3
-          : whiteModeColor.mainColor1 +
-            "," +
-            whiteModeColor.mainColor2 +
-            "," +
-            whiteModeColor.mainColor3}
+      ? darkModeColor.mainColor1 +
+      "," +
+      darkModeColor.mainColor2 +
+      "," +
+      darkModeColor.mainColor3
+      : whiteModeColor.mainColor1 +
+      "," +
+      whiteModeColor.mainColor2 +
+      "," +
+      whiteModeColor.mainColor3}
       );
     }
   `

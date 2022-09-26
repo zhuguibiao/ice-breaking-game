@@ -2,21 +2,16 @@ import React, { useContext, useState } from "react"
 import { whiteModeColor, darkModeColor } from "../../them-color"
 import ThemeContext from "../lib/context/ThemContext"
 import tw, { css } from "twin.macro"
-import { isMobile } from 'react-device-detect';
-import Button from "./Button"
 const TableOfContents = ({ toc, currentHeaderUrl }) => {
   const { isDarkMode } = useContext(ThemeContext)
   const [showToc, setShowToc] = useState(false)
   const showModal = () => {
     setShowToc(!showToc)
-    console.log(showToc)
   }
   return (
-    toc ? (
-      <>
-        {!isMobile ?
-          <div
-            css={css`
+    <>
+      <div
+        css={css`
           ::-webkit-scrollbar {
             width: 4px;
           }
@@ -51,32 +46,32 @@ const TableOfContents = ({ toc, currentHeaderUrl }) => {
             border-image: linear-gradient(
               180deg,
               ${isDarkMode
-                ? darkModeColor.mainColor1 +
-                "," +
-                darkModeColor.mainColor2 +
-                "," +
-                darkModeColor.mainColor3
-                : whiteModeColor.mainColor1 +
-                "," +
-                whiteModeColor.mainColor2 +
-                "," +
-                whiteModeColor.mainColor3}
+            ? darkModeColor.mainColor1 +
+            "," +
+            darkModeColor.mainColor2 +
+            "," +
+            darkModeColor.mainColor3
+            : whiteModeColor.mainColor1 +
+            "," +
+            whiteModeColor.mainColor2 +
+            "," +
+            whiteModeColor.mainColor3}
             );
             border-image-slice: 1;
           }
         `}
-          >
-            <div css={tw`mx-4`}>
-              <h3
-                css={css`
+      >
+        <div css={tw`mx-4`}>
+          <h3
+            css={css`
               ${tw`font-bold mb-2 text-lg mb-2`}
               ${isDarkMode ? tw`text-gray-400` : tw`text-gray-700`};
             `}
-              >
-                目录
-              </h3>
-              <div
-                css={css`
+          >
+            目录
+          </h3>
+          <div
+            css={css`
               ul {
                 margin-left: 0.5rem;
               }
@@ -92,63 +87,63 @@ const TableOfContents = ({ toc, currentHeaderUrl }) => {
                 color: ${isDarkMode ? "#DDDDDD" : "#555555"};
               }
             `}
-                dangerouslySetInnerHTML={{ __html: toc }}
-              ></div>
-            </div>
-          </div> :
-          <div
-            css={css`
-                position: fixed;
-                top: 80px;
-                right: 2px;
-                z-index: 9999;
-                max-width: 250px;
-                overflow: auto;
-                word-break: break-word;
-                max-height: calc(100vh - 200px);
-                box-shadow: 0 1px 3px rgb(60 60 60 / 10%);
-             }`
-            }
-          >
-            {!showToc ?
-              <div css={css`padding:5px;`} onClick={showModal}>目录</div> :
-              <div css={css`background:#fff;`}>
-                <div css={tw`mx-4`}>
-                  <h3
-                    onClick={showModal}
-                    css={css`
+            dangerouslySetInnerHTML={{ __html: toc }}
+          ></div>
+        </div>
+      </div>
+      <div
+        css={css`
+           display: none;
+           @media screen and (max-width: 1280px) {
+                  position: fixed;
+                  display: block;
+                  top: 80px;
+                  right: 2px;
+                  z-index: 9999;
+                  overflow: auto;
+                  word-break: break-word;
+                  max-height: calc(100vh - 45%);
+                  box-shadow: 0 1px 3px rgb(60 60 60 / 10%);
+          }`
+        }
+      >
+        {!showToc ?
+          <div css={css`padding: 5px;`} onClick={showModal}>目录</div> :
+          <div css={css`background:#fff;`}>
+            <div css={tw`mx-4`}>
+              <h3
+                onClick={showModal}
+                css={css`
                     text-align: center;
                      ${tw`mb-2 text-lg mb-2`}
-                    color: ${isDarkMode ? "#bd93f9" : "#86a8e7"}
+                    color: ${isDarkMode ? "#bd93f9" : "#3737B9"}
                    `}
-                  >
-                    目录
-                  </h3>
-                  <div
-                    css={css`
+              >
+                目录
+              </h3>
+              <div
+                css={css`
                           ul {
                             margin-left: 0.5rem;
                           }
                           ul > li a:hover {
-                            color: ${isDarkMode ? "#bd93f9" : "#86a8e7"};
+                            color: ${isDarkMode ? "#bd93f9" : "#3737B9"};
                           }
                           ul > li a {
                             transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
                             ${tw`text-gray-500 text-sm`}
                           }
                           ul > li a[href="${currentHeaderUrl}"] {
-                            color: ${isDarkMode ? "#bd93f9" : "#86a8e7"};
+                            color: ${isDarkMode ? "#bd93f9" : "#3737B9"};
                           }
                     `}
-                    dangerouslySetInnerHTML={{ __html: toc }}
-                  ></div>
-                </div>
-              </div>
-            }
+                dangerouslySetInnerHTML={{ __html: toc }}
+              ></div>
+            </div>
           </div>
         }
-      </>
-    ) : null
+      </div>
+    </>
   )
 }
 
