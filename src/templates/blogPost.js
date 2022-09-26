@@ -19,7 +19,6 @@ export default ({ data, pageContext, location }) => {
   const metaData = data.site.siteMetadata
   const { markdownRemark } = data
   const { frontmatter, html, tableOfContents, excerpt } = markdownRemark
-
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
 
   const isTOCVisible = tableOfContents?.length > 0

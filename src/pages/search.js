@@ -17,18 +17,24 @@ export default ({ data, location }) => {
     query: "",
     tag: "ALL",
     filteredData: [],
+    tagFilteredData: [],
     tags: [],
   })
 
   const onTagClick = (tag) => {
     setState((prev) => {
-      const filteredData = prev.filteredData.filter((post) => {
+      if (tag === "ALL") {
+        return {
+          ...prev,
+          tag: "ALL",
+          filteredData: state.tagFilteredData,
+        }
+      }
+      const filteredData = state.tagFilteredData.filter((post) => {
         const {
-          excerpt,
-          frontmatter: { title, tags },
+          frontmatter: { tags },
         } = post.node
-        if (tags.includes(tag)) return (excerpt && excerpt) || (title && title)
-        return []
+        return tags.includes(tag)
       })
       return {
         ...prev,
@@ -64,11 +70,11 @@ export default ({ data, location }) => {
       const filteredData = posts.filter((post) => {
         const searchQuery = query.toLowerCase().trim()
         const {
-          excerpt,
           frontmatter: { title, tags },
+          internal: { content }
         } = post.node
         return (
-          (excerpt && excerpt.toLowerCase().includes(searchQuery)) ||
+          (content && content.toLowerCase().includes(searchQuery)) ||
           (title && title.toLowerCase().includes(searchQuery)) ||
           (tags && tags.includes(searchQuery))
         )
@@ -93,6 +99,7 @@ export default ({ data, location }) => {
           tag: tag,
           query: query,
           filteredData: filteredData,
+          tagFilteredData: filteredData,
           tags: tagsData,
         }
       })
@@ -138,6 +145,9 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 100, truncate: true)
           fields {
             slug
+          }
+          internal {
+            content
           }
           frontmatter {
             date(formatString: "YYYY-MM-DD")

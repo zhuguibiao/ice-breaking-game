@@ -5,9 +5,7 @@ import { whiteModeColor, darkModeColor } from "../../them-color"
 import { Link } from "gatsby"
 import { AiOutlineSearch } from "react-icons/ai"
 
-const Wrapper = tw.nav`
-flex items-center justify-between flex-wrap max-w-screen-xl mx-auto p-5
-`
+const Wrapper = tw.nav`flex items-center justify-between flex-wrap max-w-screen-xl mx-auto p-5`
 
 var old_windows_Scrolly = 0
 
@@ -19,8 +17,8 @@ const Nav = () => {
     background: linear-gradient(
       90deg,
       ${isDarkMode
-        ? darkModeColor.mainColor1 + "," + darkModeColor.mainColor2
-        : whiteModeColor.mainColor1 + "," + whiteModeColor.mainColor2}
+      ? darkModeColor.mainColor1 + "," + darkModeColor.mainColor2
+      : whiteModeColor.mainColor1 + "," + whiteModeColor.mainColor2}
     );
   `
 
@@ -40,9 +38,14 @@ const Nav = () => {
         <Link css={tw`text-xl text-white font-bold`} to={"/"}>
           破冰游戏
         </Link>
-        <Link to={`/search`} aria-label={`search page`}>
-          <AiOutlineSearch css={tw`text-white my-auto w-8 h-8`} />
-        </Link>
+        <div css={css`display: flex`}>
+          <Link to={`/search`} aria-label={`search page`}>
+            <AiOutlineSearch css={tw`text-white my-auto w-8 h-8`} />
+          </Link>
+          <Link css={tw`text-xl text-white font-bold pl-5`} to={"/about"}>
+            关于
+          </Link>
+        </div>
       </>
     )
   }

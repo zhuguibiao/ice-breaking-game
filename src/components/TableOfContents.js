@@ -119,7 +119,7 @@ const TableOfContents = ({ toc, currentHeaderUrl }) => {
                     css={css`
                     text-align: center;
                      ${tw`mb-2 text-lg mb-2`}
-                     ${isDarkMode ? tw`text-gray-400` : tw`text-gray-700`};
+                    color: ${isDarkMode ? "#bd93f9" : "#86a8e7"}
                    `}
                   >
                     目录
@@ -130,15 +130,14 @@ const TableOfContents = ({ toc, currentHeaderUrl }) => {
                             margin-left: 0.5rem;
                           }
                           ul > li a:hover {
-                            color: ${isDarkMode ? "#DDDDDD" : "#555555"};
+                            color: ${isDarkMode ? "#bd93f9" : "#86a8e7"};
                           }
                           ul > li a {
                             transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
                             ${tw`text-gray-500 text-sm`}
                           }
                           ul > li a[href="${currentHeaderUrl}"] {
-                            font-size: 0.95rem;
-                            color: ${isDarkMode ? "#DDDDDD" : "#555555"};
+                            color: ${isDarkMode ? "#bd93f9" : "#86a8e7"};
                           }
                     `}
                     dangerouslySetInnerHTML={{ __html: toc }}

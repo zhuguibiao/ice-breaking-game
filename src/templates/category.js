@@ -119,8 +119,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
         fileAbsolutePath: { regex: $categoryRegex }
-      frontmatter: { draft: { eq: false } }
-
+        frontmatter: { draft: { eq: false } }
       }
     ) {
       edges {
