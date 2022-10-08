@@ -94,7 +94,7 @@ const TableOfContents = ({ toc, currentHeaderUrl }) => {
       <div
         css={css`
            display: none;
-           @media screen and (max-width: 1280px) {
+           @media screen and (max-width: 1250px) {
                   position: fixed;
                   display: block;
                   top: 80px;

@@ -15,7 +15,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "axios": "^0.21.0",
     "gatsby": "^2.29.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-disqus": "^1.2.3",
@@ -37,18 +36,15 @@
     "gatsby-source-filesystem": "^2.8.0",
     "gatsby-transformer-remark": "^2.13.0",
     "gatsby-transformer-sharp": "^2.9.0",
-    "install": "^0.13.0",
     "intersection-observer": "^0.11.0",
-    "material-theme": "github:Binaryify/OneDark-Pro",
-    "npm": "^7.3.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.13.7",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
-    "sharp": "^0.26.3",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "material-theme": "github:Binaryify/OneDark-Pro"
   },
   "devDependencies": {
     "@emotion/core": "^10.1.1",
