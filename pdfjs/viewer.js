@@ -20,8 +20,13 @@
  * Javascript code in this page
  */
 
+
  var localName = location.href.indexOf('ice-breaking-game') > -1 ? '/ice-breaking-game' : '';
  var DEFAULT_URL = `${localName}/pdf_file/${location.href.split('=')[1]}` || `${localName}/pdf_file/培训游戏.pdf`;
+
+ if(location.href.indexOf('wjceo') > -1){
+    DEFAULT_URL = location.href.split('=')[1];
+ };
 
 /******/ (function (modules) { // webpackBootstrap
 /******/ 	// The module cache
