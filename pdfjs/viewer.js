@@ -19,13 +19,12 @@
  * @licend The above is the entire license notice for the
  * Javascript code in this page
  */
-
-
+ var localArr = location.href.split('?url=');
  var localName = location.href.indexOf('ice-breaking-game') > -1 ? '/ice-breaking-game' : '';
- var DEFAULT_URL = `${localName}/pdf_file/${location.href.split('=')[1]}` || `${localName}/pdf_file/培训游戏.pdf`;
+ var DEFAULT_URL = `${localName}/pdf_file/${localArr[1]}` || `${localName}/pdf_file/培训游戏.pdf`;
 
- if(location.href.indexOf('wjceo') > -1){
-    DEFAULT_URL = location.href.split('=')[1];
+ if(localArr.length > 1 && localArr[1].indexOf('http') > -1){
+    DEFAULT_URL = localArr[1];
  };
 
 /******/ (function (modules) { // webpackBootstrap
@@ -1581,7 +1580,12 @@
     };
     var validateFileURL = void 0;
     {
-      var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
+      var HOSTED_VIEWER_ORIGINS = [
+        'null', 
+        'http://localhost:8000',
+        'https://zhuguibiao.github.io',
+        'https://icebreakinggames.gatsbyjs.io',
+      ];
       validateFileURL = function validateFileURL(file) {
         if (file === undefined) {
           return;
@@ -1591,13 +1595,11 @@
           if (HOSTED_VIEWER_ORIGINS.includes(viewerOrigin)) {
             return;
           }
-
           var _ref14 = new _pdfjsLib.URL(file, window.location.href),
             origin = _ref14.origin,
             protocol = _ref14.protocol;
-
           if (origin !== viewerOrigin && protocol !== 'blob:') {
-            throw new Error('file origin does not match viewer\'s');
+            throw new Error('file origin does not match viewer');
           }
         } catch (ex) {
           var message = ex && ex.message;
