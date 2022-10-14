@@ -21,12 +21,13 @@
  */
 
 
- var localName = location.href.indexOf('ice-breaking-game') > -1 ? '/ice-breaking-game' : '';
- var DEFAULT_URL = `${localName}/pdf_file/${location.href.split('=')[1]}` || `${localName}/pdf_file/培训游戏.pdf`;
+var localName = location.href.indexOf('ice-breaking-game') > -1 ? '/ice-breaking-game' : '';
+var DEFAULT_URL = `${localName}/pdf_file/${location.href.split('=')[1]}` || `${localName}/pdf_file/培训游戏.pdf`;
 
- if(location.href.indexOf('wjceo') > -1){
-    DEFAULT_URL = location.href.split('=')[1];
- };
+if (location.href.indexOf('wjceo') > -1) {
+  DEFAULT_URL = location.href.split('=')[1];
+  // console.log(DEFAULT_URL)
+};
 
 /******/ (function (modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -39,14 +40,14 @@
 /******/ 		if (installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
       /******/
-}
+    }
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
 /******/ 			exports: {}
       /******/
-};
+    };
 /******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
@@ -57,7 +58,7 @@
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
     /******/
-}
+  }
 /******/
 /******/
 /******/ 	// expose the modules object (__webpack_modules__)
@@ -71,19 +72,19 @@
 /******/ 		if (!__webpack_require__.o(exports, name)) {
 /******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
       /******/
-}
+    }
     /******/
-};
+  };
 /******/
 /******/ 	// define __esModule on exports
 /******/ 	__webpack_require__.r = function (exports) {
 /******/ 		if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
       /******/
-}
+    }
 /******/ 		Object.defineProperty(exports, '__esModule', { value: true });
     /******/
-};
+  };
 /******/
 /******/ 	// create a fake namespace object
 /******/ 	// mode & 1: value is a module id, require it
@@ -100,7 +101,7 @@
 /******/ 		if (mode & 2 && typeof value != 'string') for (var key in value) __webpack_require__.d(ns, key, function (key) { return value[key]; }.bind(null, key));
 /******/ 		return ns;
     /******/
-};
+  };
 /******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
 /******/ 	__webpack_require__.n = function (module) {
@@ -110,7 +111,7 @@
 /******/ 		__webpack_require__.d(getter, 'a', getter);
 /******/ 		return getter;
     /******/
-};
+  };
 /******/
 /******/ 	// Object.prototype.hasOwnProperty.call
 /******/ 	__webpack_require__.o = function (object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
@@ -281,7 +282,7 @@
     }
 
     /***/
-}),
+  }),
 /* 1 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -1581,13 +1582,20 @@
     };
     var validateFileURL = void 0;
     {
-      var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
+      var HOSTED_VIEWER_ORIGINS = [
+        'null',
+        "http://localhost:8000",
+        "https://zhuguibiao.github.io",
+        "https://icebreakinggames.gatsbyjs.io",
+        "https://wjceo.com",
+      ];
       validateFileURL = function validateFileURL(file) {
         if (file === undefined) {
           return;
         }
         try {
           var viewerOrigin = new _pdfjsLib.URL(window.location.href).origin || 'null';
+          console.log(viewerOrigin)
           if (HOSTED_VIEWER_ORIGINS.includes(viewerOrigin)) {
             return;
           }
@@ -1631,6 +1639,7 @@
       var params = (0, _ui_utils.parseQueryString)(queryString);
       file = 'file' in params ? params.file : _app_options.AppOptions.get('defaultUrl');
       validateFileURL(file);
+
       var fileInput = document.createElement('input');
       fileInput.id = appConfig.openFileInputName;
       fileInput.className = 'fileInput';
@@ -2315,7 +2324,7 @@
     exports.PDFPrintServiceFactory = PDFPrintServiceFactory;
 
     /***/
-}),
+  }),
 /* 2 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -2325,7 +2334,7 @@
     module.exports = __webpack_require__(3);
 
     /***/
-}),
+  }),
 /* 3 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -2350,7 +2359,7 @@
     }
 
     /***/
-}),
+  }),
 /* 4 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -2819,10 +2828,10 @@
         return this;
       }() || Function("return this")());
       /* WEBPACK VAR INJECTION */
-}.call(this, __webpack_require__(5)(module)))
+    }.call(this, __webpack_require__(5)(module)))
 
     /***/
-}),
+  }),
 /* 5 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -2852,7 +2861,7 @@
     };
 
     /***/
-}),
+  }),
 /* 6 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -3581,7 +3590,7 @@
     exports.moveToEndOfArray = moveToEndOfArray;
 
     /***/
-}),
+  }),
 /* 7 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -3597,7 +3606,7 @@
     module.exports = pdfjsLib;
 
     /***/
-}),
+  }),
 /* 8 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -3726,7 +3735,7 @@
     exports.PDFCursorTools = PDFCursorTools;
 
     /***/
-}),
+  }),
 /* 9 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -3868,7 +3877,7 @@
     exports.GrabToPan = GrabToPan;
 
     /***/
-}),
+  }),
 /* 10 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -4007,7 +4016,7 @@
     exports.PDFRenderingQueue = PDFRenderingQueue;
 
     /***/
-}),
+  }),
 /* 11 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -4366,7 +4375,7 @@
     exports.PDFSidebar = PDFSidebar;
 
     /***/
-}),
+  }),
 /* 12 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -4597,7 +4606,7 @@
     exports.OptionKind = OptionKind;
 
     /***/
-}),
+  }),
 /* 13 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -4618,7 +4627,7 @@
     exports.viewerCompatibilityParams = Object.freeze(compatibilityParams);
 
     /***/
-}),
+  }),
 /* 14 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -4744,7 +4753,7 @@
     exports.getGlobalEventBus = getGlobalEventBus;
 
     /***/
-}),
+  }),
 /* 15 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -5010,7 +5019,7 @@
     exports.OverlayManager = OverlayManager;
 
     /***/
-}),
+  }),
 /* 16 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -5108,7 +5117,7 @@
     exports.PasswordPrompt = PasswordPrompt;
 
     /***/
-}),
+  }),
 /* 17 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -5263,7 +5272,7 @@
     exports.PDFAttachmentViewer = PDFAttachmentViewer;
 
     /***/
-}),
+  }),
 /* 18 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -5603,7 +5612,7 @@
     exports.PDFDocumentProperties = PDFDocumentProperties;
 
     /***/
-}),
+  }),
 /* 19 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -5821,7 +5830,7 @@
     exports.PDFFindBar = PDFFindBar;
 
     /***/
-}),
+  }),
 /* 20 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -6359,7 +6368,7 @@
     exports.PDFFindController = PDFFindController;
 
     /***/
-}),
+  }),
 /* 21 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -6440,7 +6449,7 @@
     exports.getCharacterType = getCharacterType;
 
     /***/
-}),
+  }),
 /* 22 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -6901,7 +6910,7 @@
     exports.isDestArraysEqual = isDestArraysEqual;
 
     /***/
-}),
+  }),
 /* 23 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -7310,7 +7319,7 @@
     exports.SimpleLinkService = SimpleLinkService;
 
     /***/
-}),
+  }),
 /* 24 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -7496,7 +7505,7 @@
     exports.PDFOutlineViewer = PDFOutlineViewer;
 
     /***/
-}),
+  }),
 /* 25 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -7890,7 +7899,7 @@
     exports.PDFPresentationMode = PDFPresentationMode;
 
     /***/
-}),
+  }),
 /* 26 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -8041,7 +8050,7 @@
     exports.PDFSidebarResizer = PDFSidebarResizer;
 
     /***/
-}),
+  }),
 /* 27 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -8279,7 +8288,7 @@
     exports.PDFThumbnailViewer = PDFThumbnailViewer;
 
     /***/
-}),
+  }),
 /* 28 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -8640,7 +8649,7 @@
     exports.PDFThumbnailView = PDFThumbnailView;
 
     /***/
-}),
+  }),
 /* 29 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -8768,7 +8777,7 @@
     exports.PDFViewer = PDFViewer;
 
     /***/
-}),
+  }),
 /* 30 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -9706,7 +9715,7 @@
     exports.SpreadMode = SpreadMode;
 
     /***/
-}),
+  }),
 /* 31 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -9838,7 +9847,7 @@
     exports.DefaultAnnotationLayerFactory = DefaultAnnotationLayerFactory;
 
     /***/
-}),
+  }),
 /* 32 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -10383,7 +10392,7 @@
     exports.PDFPageView = PDFPageView;
 
     /***/
-}),
+  }),
 /* 33 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -10770,7 +10779,7 @@
     exports.DefaultTextLayerFactory = DefaultTextLayerFactory;
 
     /***/
-}),
+  }),
 /* 34 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -11102,7 +11111,7 @@
     exports.SecondaryToolbar = SecondaryToolbar;
 
     /***/
-}),
+  }),
 /* 35 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -11277,7 +11286,7 @@
     exports.PDFSinglePageViewer = PDFSinglePageViewer;
 
     /***/
-}),
+  }),
 /* 36 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -11501,7 +11510,7 @@
     exports.Toolbar = Toolbar;
 
     /***/
-}),
+  }),
 /* 37 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -11748,7 +11757,7 @@
     exports.ViewHistory = ViewHistory;
 
     /***/
-}),
+  }),
 /* 38 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -11866,7 +11875,7 @@
     exports.GenericCom = GenericCom;
 
     /***/
-}),
+  }),
 /* 39 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -12199,7 +12208,7 @@
     exports.BasePreferences = BasePreferences;
 
     /***/
-}),
+  }),
 /* 40 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -12285,7 +12294,7 @@
     exports.DownloadManager = DownloadManager;
 
     /***/
-}),
+  }),
 /* 41 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -12453,7 +12462,7 @@
     exports.GenericL10n = GenericL10n;
 
     /***/
-}),
+  }),
 /* 42 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -13188,7 +13197,7 @@
     }(window, document);
 
     /***/
-}),
+  }),
 /* 43 */
 /***/ (function (module, exports, __webpack_require__) {
 
@@ -13458,5 +13467,5 @@
     exports.PDFPrintService = PDFPrintService;
 
     /***/
-})
+  })
 /******/]);
