@@ -1,4 +1,4 @@
-import React, { useContext ,useState} from "react"
+import React, { useContext ,useState,useEffect} from "react"
 import tw, { css } from "twin.macro"
 import SEO from "../components/seo"
 import Profile from "../components/Profile"
@@ -36,9 +36,12 @@ export default ({ data, location }) => {
   const { isDarkMode } = useContext(ThemeContext)
   const [lName, setLName] = useState('')
 
-  if (location.href) {
-    setLName(location.href.indexOf('ice-breaking-game') > -1 ? '/ice-breaking-game' : '')
-  }
+  useEffect(() => {
+    if (location.href) {
+      setLName(location.href.indexOf('ice-breaking-game') > -1 ? '/ice-breaking-game' : '')
+    }
+  },[])
+  
   
   return (
     <Layout>
