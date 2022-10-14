@@ -13,11 +13,16 @@ import CategoryMenu from "../components/CategoryMenu"
 
 const Wrapper = tw.div`w-full max-w-screen-md mx-auto`
 
+
 export default ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
   const { countOfInitialPost } = data.site.siteMetadata.configs
-  const categoryTitle = decodeURI(location.pathname).split("/").join(" ").trim()
-
+  const categoryTitle = getCategory()
+  function getCategory() {
+    const catArr = decodeURI(location.pathname).split("/")
+    return catArr[catArr.length - 2].trim()
+  }
+  
   const [count, countRef, increaseCount] = useCount(categoryTitle)
   const bottomRef = useRef()
 

@@ -42,6 +42,9 @@ const Nav = () => {
           <Link to={`/search`} aria-label={`search page`}>
             <AiOutlineSearch css={tw`text-white my-auto w-8 h-8`} />
           </Link>
+          <Link css={tw`text-xl text-white font-bold ml-5`} to={"/pdf"}>
+            文档
+          </Link>
           <Link css={tw`text-xl text-white font-bold ml-5`} to={"/about"}>
             关于
           </Link>
