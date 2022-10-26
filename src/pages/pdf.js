@@ -37,11 +37,12 @@ const fileListBigsize = [
 const Wrapper = tw.div`w-full max-w-screen-md px-4 md:px-0 mx-auto pt-4 md:pt-12 mt-2 mb-4`
 export default ({ data, location }) => {
   const { isDarkMode } = useContext(ThemeContext)
-  const [lName, setLName] = useState('')
+  const [lName, setLName] = useState('/ice-breaking-game')
 
   useEffect(() => {
     if (location.href) {
-      setLName(location.href.indexOf('ice-breaking-game') > -1 ? '/ice-breaking-game' : '')
+      console.log(location.href)
+      setLName(location.href.indexOf('ice-breaking-game') === -1 ? '' : '/ice-breaking-game')
     }
   }, [])
 
