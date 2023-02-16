@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import ThemeContext from "../lib/context/ThemContext"
 
 const fileList = [
+  '主日学课件.pdf',
+  '良友讲义.pdf',
   '恩溪破冰游戏库.pdf',
   '室内破冰小游戏大全70个.pdf',
   '2019年4月户外游戏.pdf',

@@ -100,9 +100,8 @@ const TableOfContents = ({ toc, currentHeaderUrl }) => {
                   top: 80px;
                   right: 2px;
                   z-index: 9999;
-                  overflow: auto;
                   word-break: break-word;
-                  max-height: calc(100vh - 45%);
+                  max-height: calc(100vh - 30vh);
                   box-shadow: 0 1px 3px rgb(60 60 60 / 10%);
           }`
         }
@@ -110,17 +109,24 @@ const TableOfContents = ({ toc, currentHeaderUrl }) => {
         {!showToc ?
           <div css={css`padding: 5px;`} onClick={showModal}>目录</div> :
           <div css={css`background:#fff;`}>
-            <div css={tw`mx-4`}>
-              <h3
-                onClick={showModal}
-                css={css`
+            <h3
+              onClick={showModal}
+              css={css`
                     text-align: center;
                      ${tw`mb-2 text-lg mb-2`}
                     color: ${isDarkMode ? "#bd93f9" : "#3737B9"}
                    `}
-              >
-                目录
-              </h3>
+            >
+              目录
+            </h3>
+            <div
+              css={css`
+             ${tw`mx-4`}
+             max-height: calc(100vh - 40vh);
+             padding-bottom:10px;
+             overflow: auto;
+           `}
+            >
               <div
                 css={css`
                           ul {
