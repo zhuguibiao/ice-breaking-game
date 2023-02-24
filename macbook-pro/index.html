@@ -1,0 +1,501 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/><style data-href="/ice-breaking-game/styles.d53766664f3eaba3db40.css" id="gatsby-global-css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#a0aec0}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#a0aec0}input::placeholder,textarea::placeholder{color:#a0aec0}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}</style><meta name="generator" content="Gatsby 2.32.13"/><style type="text/css">
+    .toc-header.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .toc-header.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .toc-header svg,
+    h2 .toc-header svg,
+    h3 .toc-header svg,
+    h4 .toc-header svg,
+    h5 .toc-header svg,
+    h6 .toc-header svg {
+      visibility: hidden;
+    }
+    h1:hover .toc-header svg,
+    h2:hover .toc-header svg,
+    h3:hover .toc-header svg,
+    h4:hover .toc-header svg,
+    h5:hover .toc-header svg,
+    h6:hover .toc-header svg,
+    h1 .toc-header:focus svg,
+    h2 .toc-header:focus svg,
+    h3 .toc-header:focus svg,
+    h4 .toc-header:focus svg,
+    h5 .toc-header:focus svg,
+    h6 .toc-header:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/ice-breaking-game/favicon-32x32-122c0b177eb3106eed947f8b136fb4ef.png" type="image/png"/><link rel="manifest" href="/ice-breaking-game/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#3F4145"/><link rel="apple-touch-icon" sizes="48x48" href="/ice-breaking-game/icons/icon-48x48-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="72x72" href="/ice-breaking-game/icons/icon-72x72-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="96x96" href="/ice-breaking-game/icons/icon-96x96-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="144x144" href="/ice-breaking-game/icons/icon-144x144-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="192x192" href="/ice-breaking-game/icons/icon-192x192-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="256x256" href="/ice-breaking-game/icons/icon-256x256-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="384x384" href="/ice-breaking-game/icons/icon-384x384-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="apple-touch-icon" sizes="512x512" href="/ice-breaking-game/icons/icon-512x512-122c0b177eb3106eed947f8b136fb4ef.png"/><link rel="alternate" type="application/rss+xml" href="/ice-breaking-game/rss.xml"/><title data-react-helmet="true">mac软件 | 破冰游戏</title><meta data-react-helmet="true" name="description" content="第一次可以使用下面的安装列表，后面可以使用TimeMachine 安装 ClashX / ShadowsocksX  你懂的~~ 安装 App 和 Cli 工具 1、安装 HomeBrew 并用他安装 App 和 Cli 工具。App 可以在 homebrew-cask — Homebrew Formulae 里找有没有，Cli 工具可以在 homebrew-core — Homebrew Fo…"/><meta data-react-helmet="true" property="og:title" content="mac软件"/><meta data-react-helmet="true" property="og:image" content="/ice-breaking-game/static/timg-dc3f4acd428cae0f9c5299f571477406.jpeg"/><meta data-react-helmet="true" property="og:description" content="第一次可以使用下面的安装列表，后面可以使用TimeMachine 安装 ClashX / ShadowsocksX  你懂的~~ 安装 App 和 Cli 工具 1、安装 HomeBrew 并用他安装 App 和 Cli 工具。App 可以在 homebrew-cask — Homebrew Formulae 里找有没有，Cli 工具可以在 homebrew-core — Homebrew Fo…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:image" content="/ice-breaking-game/static/timg-dc3f4acd428cae0f9c5299f571477406.jpeg"/><meta data-react-helmet="true" name="twitter:creator" content="zhuguibiao"/><meta data-react-helmet="true" name="twitter:title" content="mac软件"/><meta data-react-helmet="true" name="twitter:description" content="第一次可以使用下面的安装列表，后面可以使用TimeMachine 安装 ClashX / ShadowsocksX  你懂的~~ 安装 App 和 Cli 工具 1、安装 HomeBrew 并用他安装 App 和 Cli 工具。App 可以在 homebrew-cask — Homebrew Formulae 里找有没有，Cli 工具可以在 homebrew-core — Homebrew Fo…"/><link rel="sitemap" type="application/xml" href="/ice-breaking-game/sitemap.xml"/><link as="script" rel="preload" href="/ice-breaking-game/webpack-runtime-d1559ebe03340a0b49f8.js"/><link as="script" rel="preload" href="/ice-breaking-game/framework-9e190ddcdab0587328a8.js"/><link as="script" rel="preload" href="/ice-breaking-game/styles-9411612e31e4f14527d1.js"/><link as="script" rel="preload" href="/ice-breaking-game/ff08cc1e-be779e151dac4d9f9baa.js"/><link as="script" rel="preload" href="/ice-breaking-game/a0fb4d8f-6e13e2cf7fe97741bf45.js"/><link as="script" rel="preload" href="/ice-breaking-game/76ed74f8-9ef585f0346bc3c2c0c0.js"/><link as="script" rel="preload" href="/ice-breaking-game/app-70073db101c422a64533.js"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/macbook-pro/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/sq/d/240101170.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/sq/d/352973270.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/ice-breaking-game/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript><style data-emotion-css="1vyo7ug">.css-1vyo7ug{position:fixed;bottom:0;left:0;margin-left:0.5rem;margin-bottom:0.5rem;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:0.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));font-size:0.875rem;font-weight:700;padding-left:1rem;padding-right:1rem;padding-top:0.75rem;padding-bottom:0.75rem;background-color:#86a8e7;z-index:9999;}</style><div class="css-1vyo7ug"><style data-emotion-css="5x4yj0">.css-5x4yj0{fill:currentColor;width:1.5rem;height:1.5rem;margin-right:0.5rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 192 512" class="css-5x4yj0" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"></path></svg><style data-emotion-css="1f2k2gl">.css-1f2k2gl{margin-left:0.5rem;}</style><div class="css-1f2k2gl">Please enable JavaScript to use this site.<br/>JavaScript.</div></div></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion-css="f6s0ma">.css-f6s0ma{-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#333333;}</style><style data-emotion-css="acifd">.css-acifd{min-height:100vh;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#333333;}</style><div class="css-acifd ehw5m150"><style data-emotion-css="8ezs2g">.css-8ezs2g{min-height:calc(100vh - 100px);}</style><div class="css-8ezs2g"><style data-emotion-css="1yxw6gp">.css-1yxw6gp{background:linear-gradient( 90deg,#7f7fd5,#86a8e7 );}</style><div class="css-1yxw6gp"><style data-emotion-css="1mqm4zt">.css-1mqm4zt{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:1280px;margin-left:auto;margin-right:auto;padding:1.25rem;}</style><nav class="css-1mqm4zt e18p4ymr0"><style data-emotion-css="1usmgm5">.css-1usmgm5{font-size:1.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));font-weight:700;}</style><a class="css-1usmgm5" href="/ice-breaking-game/">破冰游戏</a><style data-emotion-css="zjik7">.css-zjik7{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}</style><div class="css-zjik7"><a aria-label="search page" href="/ice-breaking-game/search"><style data-emotion-css="47445j">.css-47445j{--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));margin-top:auto;margin-bottom:auto;width:2rem;height:2rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-47445j" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></a><style data-emotion-css="1g9ospj">.css-1g9ospj{font-size:1.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));font-weight:700;margin-left:1.25rem;}</style><a class="css-1g9ospj" href="/ice-breaking-game/pdf">文档</a><a class="css-1g9ospj" href="/ice-breaking-game/about">关于</a></div></nav></div><style data-emotion-css="aod07n">.css-aod07n{background:linear-gradient( 90deg,#7f7fd5,#86a8e7 );position:fixed;width:100%;box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);z-index:100;-webkit-transition:all 300ms cubic-bezier(0,0,0.2,1);transition:all 300ms cubic-bezier(0,0,0.2,1);top:-100px;}</style><div class="css-aod07n"><nav class="css-1mqm4zt e18p4ymr0"><a class="css-1usmgm5" href="/ice-breaking-game/">破冰游戏</a><div class="css-zjik7"><a aria-label="search page" href="/ice-breaking-game/search"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-47445j" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></a><a class="css-1g9ospj" href="/ice-breaking-game/pdf">文档</a><a class="css-1g9ospj" href="/ice-breaking-game/about">关于</a></div></nav></div><style data-emotion-css="w27u98">.css-w27u98{margin-top:1rem;padding-left:1rem;padding-right:1rem;}</style><div class="blog-post-container css-w27u98"><div class="blog-post"><style data-emotion-css="1bdwg0l">.css-1bdwg0l{width:100%;max-width:768px;margin-left:auto;margin-right:auto;}</style><div class="css-1bdwg0l ek48yxb0"><style data-emotion-css="1abxlfd">.css-1abxlfd{font-size:2.25rem;font-weight:700;margin-bottom:1rem;}@media (min-width:768px){.css-1abxlfd{font-size:3rem;}}</style><h1 class="blog-title css-1abxlfd">mac软件</h1><style data-emotion-css="cpn9zx">.css-cpn9zx{font-size:1rem;margin-bottom:1rem;}</style><h2 class="blog-date css-cpn9zx">2022-03-24</h2><style data-emotion-css="cet0rr">.css-cet0rr{margin-bottom:0.5rem;}</style><div class="blog-tags css-cet0rr"><style data-emotion-css="1up0vzc">.css-1up0vzc{white-space:nowrap;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);font-size:1rem;font-weight:700;border-radius:9999px;margin-right:0.5rem;margin-top:0.25rem;margin-bottom:0.25rem;padding-top:0.25rem;padding-bottom:0.25rem;padding-left:0.75rem;padding-right:0.75rem;background-color:#edf2f7;color:#3737B9;font-size:14px;}</style><button class="css-1up0vzc">其他</button></div><style data-emotion-css="1l4w6pd">.css-1l4w6pd{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}</style><div class="css-1l4w6pd"><style data-emotion-css="yapsbb">.css-yapsbb{border-radius:9999px;width:100%;height:1px;--bg-opacity:1;background-color:rgba(247,250,252,var(--bg-opacity));background:linear-gradient( 270deg,#7f7fd5,#86a8e7,#91eac9 );}</style><div class="css-yapsbb"></div></div></div><div class="blog-content"><style data-emotion-css="19vk1qv">.css-19vk1qv{-webkit-scrollbar-width:thin;-moz-scrollbar-width:thin;-ms-scrollbar-width:thin;scrollbar-width:thin;-webkit-scrollbar-color:gray transparent;-moz-scrollbar-color:gray transparent;-ms-scrollbar-color:gray transparent;scrollbar-color:gray transparent;display:none;}.css-19vk1qv::-webkit-scrollbar{width:4px;}.css-19vk1qv::-webkit-scrollbar-track{background-color:transparent;}.css-19vk1qv::-webkit-scrollbar-thumb{border-radius:9999px;background-color:gray;}.css-19vk1qv::-webkit-scrollbar-button{width:0;height:0;}@media screen and (min-width:1280px){.css-19vk1qv{float:right;position:-webkit-sticky;position:sticky;top:100px;width:calc((100vw - 720px) / 2 - 80px);max-width:250px;margin-right:1rem;overflow:auto;word-break:break-word;max-height:calc(100vh - 200px);fontsize:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;border-left-width:4px;border-image:linear-gradient( 180deg,#7f7fd5,#86a8e7,#91eac9 );border-image-slice:1;}}</style><div class="css-19vk1qv"><style data-emotion-css="13af3fo">.css-13af3fo{margin-left:1rem;margin-right:1rem;}</style><div class="css-13af3fo"><style data-emotion-css="17i5xbf">.css-17i5xbf{font-weight:700;margin-bottom:0.5rem;font-size:1.125rem;--text-opacity:1;color:rgba(74,85,104,var(--text-opacity));}</style><h3 class="css-17i5xbf">目录</h3><style data-emotion-css="1me4zjn">.css-1me4zjn ul{margin-left:0.5rem;}.css-1me4zjn ul > li a:hover{color:#555555;}.css-1me4zjn ul > li a{-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);--text-opacity:1;color:rgba(160,174,192,var(--text-opacity));font-size:0.875rem;}.css-1me4zjn ul > li a[href=""]{font-size:0.95rem;color:#555555;}</style><div class="css-1me4zjn"><ul>
+<li><a href="/ice-breaking-game/macbook-pro/#%E5%AE%89%E8%A3%85-clashx--shadowsocksx">安装 ClashX / ShadowsocksX</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#%E5%AE%89%E8%A3%85-app-%E5%92%8C-cli-%E5%B7%A5%E5%85%B7">安装 App 和 Cli 工具</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#%E5%87%86%E5%A4%87%E6%9C%AC%E5%9C%B0%E7%9B%AE%E5%BD%95">准备本地目录</a></li>
+<li>
+<p><a href="/ice-breaking-game/macbook-pro/#%E9%85%8D%E7%BD%AE-app">配置 App</a></p>
+<ul>
+<li><a href="/ice-breaking-game/macbook-pro/#karabiner-elements">Karabiner-Elements</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#alfred">Alfred</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#iterm2-%E5%92%8C-zsh">iTerm2 和 zsh</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#ssh">SSH</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#%E9%A2%9D%E5%A4%96%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7bun">额外命令行工具：Bun</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#espanso">Espanso</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#thor">Thor</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93">安装字体</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#vscode">VSCode</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#git">Git</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#nvm-%E5%92%8C-node">NVM 和 Node</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#eagle">Eagle</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#bob">Bob</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#rectangle">Rectangle</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#upic">uPic</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#paste">Paste</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#reeder">Reeder</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#google-chrome">Google Chrome</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#telegram">Telegram</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#ia-writer">iA Writer</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#shottr">Shottr</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#sip">Sip</a></li>
+<li><a href="/ice-breaking-game/macbook-pro/#cleanshotx">CleanShotX</a></li>
+</ul>
+</li>
+<li><a href="/ice-breaking-game/macbook-pro/#%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE">系统设置</a></li>
+</ul></div></div></div><style data-emotion-css="1gaedv9">.css-1gaedv9{display:none;}@media screen and (max-width:1250px){.css-1gaedv9{position:fixed;display:block;top:80px;right:2px;z-index:9999;word-break:break-word;max-height:calc(100vh - 30vh);box-shadow:0 1px 3px rgb(60 60 60 / 10%);}}</style><div class="css-1gaedv9"><style data-emotion-css="1g360fb">.css-1g360fb{padding:5px;}</style><div class="css-1g360fb">目录</div></div><div class="css-1bdwg0l ek48yxb0"><div><style data-emotion-css="cynvtk">.css-cynvtk{font-size:1rem;word-break:break-word;}.css-cynvtk h1 > a > svg,.css-cynvtk h2 > a > svg,.css-cynvtk h3 > a > svg,.css-cynvtk h4 > a > svg,.css-cynvtk h5 > a > svg,.css-cynvtk h6 > a > svg{fill:#000;}.css-cynvtk h1,.css-cynvtk h2{font-size:1.25rem;font-weight:600;margin-top:1rem;margin-bottom:1rem;}.css-cynvtk h3,.css-cynvtk h4,.css-cynvtk h5,.css-cynvtk h6{font-size:1.125rem;margin-top:1.5rem;margin-bottom:1.5rem;font-weight:600;}@media (min-width:640px){.css-cynvtk h1,.css-cynvtk h2{font-size:1.5rem;}.css-cynvtk h3,.css-cynvtk h4,.css-cynvtk h5,.css-cynvtk h6{font-size:1.25rem;}}.css-cynvtk a{color:#3737B9;}.css-cynvtk a:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-cynvtk p{margin:0.3rem;}.css-cynvtk ul,.css-cynvtk ol{margin:0.3rem;margin-left:2rem;}.css-cynvtk li > p,.css-cynvtk li > ul,.css-cynvtk li > ol{margin-bottom:0;}.css-cynvtk li > ul{margin-left:1rem;}.css-cynvtk ol{list-style-type:decimal;}.css-cynvtk ul{list-style:none;}.css-cynvtk blockquote{padding:0.5rem;background-color:#eee;margin:0.3rem;margin-top:0.5rem;margin-bottom:0.5rem;border-left-width:4px;border-color:#86a8e7;}.css-cynvtk blockquote > p{margin:0.5rem;}.css-cynvtk blockquote > h1,.css-cynvtk blockquote > h2,.css-cynvtk blockquote > h3,.css-cynvtk blockquote > h4,.css-cynvtk blockquote > h5{margin-top:0.5rem;margin-bottom:0.5rem;}.css-cynvtk td,.css-cynvtk th{padding-left:0.5rem;padding-right:0.5rem;padding-top:0.25rem;padding-bottom:0.25rem;border-width:1px;border-color:#86a8e7;}.css-cynvtk tr:nth-of-type(even){background-color:#eee;}.css-cynvtk th{background-color:#eee;}.css-cynvtk table{margin-bottom:1.5rem;display:block;max-width:-webkit-fit-content;max-width:-moz-fit-content;max-width:fit-content;margin:0 auto;overflow-x:auto;white-space:nowrap;}.css-cynvtk p > code,.css-cynvtk li > code{padding-top:0.1rem;padding-bottom:0.1rem;padding-right:0.25rem;padding-left:0.25rem;border-radius:0.25rem;color:#3737B9;background-color:#eee;white-space:pre-line;}.css-cynvtk pre.grvsc-container{margin-top:24px;margin-bottom:24px;}.css-cynvtk hr{margin-top:24px;margin-bottom:24px;height:2px;border:none;background:linear-gradient( 270deg,#7f7fd5,#86a8e7,#91eac9 );}</style><div class="markdown css-cynvtk"><blockquote>
+<p>第一次可以使用下面的安装列表，后面可以使用TimeMachine</p>
+</blockquote>
+<h2 id="安装-clashx--shadowsocksx" style="position:relative;"><a href="#%E5%AE%89%E8%A3%85-clashx--shadowsocksx" aria-label="安装 clashx  shadowsocksx permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安装 ClashX / ShadowsocksX</h2>
+<p> 你懂的~~</p>
+<h2 id="安装-app-和-cli-工具" style="position:relative;"><a href="#%E5%AE%89%E8%A3%85-app-%E5%92%8C-cli-%E5%B7%A5%E5%85%B7" aria-label="安装 app 和 cli 工具 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安装 App 和 Cli 工具</h2>
+<p>1、安装 HomeBrew 并用他安装 App 和 Cli 工具。App 可以在 <a href="https://formulae.brew.sh/cask/">homebrew-cask — Homebrew Formulae</a> 里找有没有，Cli 工具可以在 <a href="https://formulae.brew.sh/formula/">homebrew-core — Homebrew Formulae</a> 找有没有。</p>
+<pre class="grvsc-container one-dark-pro" data-language="bash" data-index="0"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># 先开代理，不然会很慢（依赖第一步）</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk9">export</span><span class="mtk1"> https_proxy=http://127.0.0.1:1087 http_proxy=http://127.0.0.1:1087 all_proxy=socks5://127.0.0.1:1087</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># 安装 HomeBrew</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">/bin/bash -c </span><span class="mtk6">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># 用 HomeBrew 安装 App，以下是我可以用 HomeBrew 安装的 App 列表（以字母排序，方便你查找）</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">brew install --cask \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  115browser \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  1password \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  alfred \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  battery-buddy \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  coteditor \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  docker </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  eagle </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  espanso </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  figma </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  google-chrome  </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  gas-mask </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  handbrake </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  iina </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  iterm2 </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  karabiner-elements </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  keepingyouawake </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  keycastr </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  licecap </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  microsoft-remote-desktop </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  obs </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  obsidian </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  qq \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  setapp </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  shottr </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  sogouinput </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  sourcetree </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  telegram </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  thor </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  usr-sse2-rdm </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  videofusion </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  visual-studio-code </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  wechat \</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  zerotier-one</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># 安装 Cli 工具，以下是我的（以字母排序，方便你查找）</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">brew install </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  autojump </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  bat </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  cmatrix </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  commitzen </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  deno </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  diff-so-fancy </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  fd </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  ffmpeg </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  fzf </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  gh </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  git </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  httpie </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  hub </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  hyperfine </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  imagemagick </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  lazygit </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  mkcert </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  nvm </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  pnpm </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  the_silver_searcher </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  tig </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  tldr </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  tree </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  ugit </span><span class="mtk8">\ </span><span class="mtk1"> </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  wget </span><span class="mtk8">\ </span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  youtube-dl</span></span></span></code></pre>
+<p>2、用 SetApp 安装额外 App。</p>
+<ul>
+<li>Bartender</li>
+<li>CleanMyMac X</li>
+<li>CleanShot X</li>
+<li>DevUtils</li>
+<li>Downie</li>
+<li>Sip</li>
+<li>RapidAPI</li>
+<li>Paste</li>
+<li>Yoink</li>
+</ul>
+<p>3、用 Mac App Store 安装额外 App。</p>
+<ul>
+<li>Bob</li>
+<li>Tot</li>
+<li>RunCat</li>
+<li>Infuse</li>
+</ul>
+<p>4、通过其他渠道安装额外 App。</p>
+<ul>
+<li><a href="https://github.com/tw93/Pake">Flomo x Pake</a></li>
+<li><a href="https://justgetflux.com/">Flux</a></li>
+<li>Reeder（国区没有）</li>
+<li>PDF Expert</li>
+<li><a href="https://github.com/gee1k/uPic">uPic</a></li>
+<li><a href="https://github.com/lencx/ChatGPT">ChatGPT x Tauri</a></li>
+</ul>
+<h2 id="准备本地目录" style="position:relative;"><a href="#%E5%87%86%E5%A4%87%E6%9C%AC%E5%9C%B0%E7%9B%AE%E5%BD%95" aria-label="准备本地目录 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>准备本地目录</h2>
+<p>我在 ~/Documents 下建了两个目录（新电脑还没施工完成，这里还会补充更多目录），Code 和 SoftwareConfiguration。Code 用于存代码；SoftwareConfiguration 用于保存各种软件配置，我把 Alfred、Eagle 和 Espanso 的配置放在这里。</p>
+<h2 id="配置-app" style="position:relative;"><a href="#%E9%85%8D%E7%BD%AE-app" aria-label="配置 app permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>配置 App</h2>
+<blockquote>
+<p>按这个顺序会比较好。</p>
+</blockquote>
+<h3 id="karabiner-elements" style="position:relative;"><a href="#karabiner-elements" aria-label="karabiner elements permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Karabiner-Elements</h3>
+<p>参考 <a href="https://hackmd.io/@UXqYDTxCTie91Shvsppqyw/rk4u9i-pG?type=view">Karabiner-Element 配置 F19 键 - HackMD</a> 。在 <a href="https://pqrs.org/osx/karabiner/complex_modifications/">Karabiner-Elements complex_modifications rules</a> 搜「Change caps<em>lock key」，import 后只保留一条和 F19 相关的，然后在命令行里编辑「~/.config/karabiner/karabiner.json」，把刚才那条规则的「caps</em>lock」换成「right_command」（两处）。这样你就把基本不会用到的「右⌘」废物利用变成了「F19」键，然后你的快捷键组合会多很多。</p>
+<p>如果你仔细看配置，会发现「F19」是由四个键「⌘⇧⌃⌥」组成的，在一些 App 的快捷键配置里你会看到四个键，不要奇怪，这也是他。</p>
+<h3 id="alfred" style="position:relative;"><a href="#alfred" aria-label="alfred permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Alfred</h3>
+<p>做几个配置。1）开启 Powerpack，2）修改快捷键为刚才配的「F19」，3）把老电脑的 Alfred 配置复制到 ~/Documents/SoftwareConfiguration/Alfred 下，然后在「Advanced」里修改配置目录指向他，你的 Workflow 就全回来了，4）「Features > Web Bookmarks」里记得把「Google Chrome Bookmarks」选上，这样就可以用 Alfred 模糊搜 Chrome 书签，用于快速打开网站。</p>
+<h3 id="iterm2-和-zsh" style="position:relative;"><a href="#iterm2-%E5%92%8C-zsh" aria-label="iterm2 和 zsh permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iTerm2 和 zsh</h3>
+<p>先配置 iTerm2，这是<a href="https://img.alicdn.com/imgextra/i1/O1CN01PPttEm1mCx3bddVjX_!!6000000004919-2-tps-2374-1532.png">效果图</a>。1）Appearance 里，General 的 Theme 选「Minimal」，Pane 里不要「Show per-pane title bar with split panes」，Dimming 里选上第一和第三个，2）Profiles 里，Working Directory 里选「Reuse previous session's directory」。</p>
+<p>安装 <a href="https://youmeek.gitbooks.io/linux-tutorial/content/markdown-file/Zsh.html">zsh</a> 和 <a href="https://starship.rs/">starship</a>，starship 是 rust 写的 prompt 工具，极快。</p>
+<h3 id="ssh" style="position:relative;"><a href="#ssh" aria-label="ssh permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SSH</h3>
+<pre class="grvsc-container one-dark-pro" data-language="bash" data-index="1"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">mkdir ~/.ssh</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># file name 用 github，passphrase 随意</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">ssh-keygen -t ed25519 -C </span><span class="mtk6">&quot;github&quot;</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># 编辑配置，内容如下</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">touch ~/.ssh/config</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">Host *</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  AddKeysToAgent yes</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  UseKeychain yes</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">  IdentityFile ~/.ssh/github</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># 添加到系统 keychain</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">ssh-add --apple-use-keychain ~/.ssh/github</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk5 mtki"># 添加 public key 到 github</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">gh auth login</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">gh ssh-key add ~/.ssh/github.pub -t github</span></span></span></code></pre>
+<h3 id="额外命令行工具bun" style="position:relative;"><a href="#%E9%A2%9D%E5%A4%96%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7bun" aria-label="额外命令行工具bun permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>额外命令行工具：Bun</h3>
+<p>安装 Bun。我主要是用他的 run 命令，极快，上面也有别名 <code>br</code>，比如执行比如 <code>br dev</code> 即 <code>npm run dev</code>。</p>
+<pre class="grvsc-container one-dark-pro" data-language="bash" data-index="2"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">curl -fsSL https://bun.sh/install | bash</span></span></span></code></pre>
+<h3 id="espanso" style="position:relative;"><a href="#espanso" aria-label="espanso permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Espanso</h3>
+<p>我在 ~/Documents/SoftwareConfiguration/Espanso 下建了个 base.yml，内容如下（已删除个人敏感信息），并软链到 Espanso 原来的配置文件夹里。</p>
+<pre class="grvsc-container one-dark-pro" data-language="" data-index="3"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source">matches:</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  # misc</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;&gt;&gt;&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: ➡</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;vv&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: ⬇</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;^^&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: ⬆</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;&lt;&lt;&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: ⬅</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  # life</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;mobi&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: 我的手机号</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;mail&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: 我的邮箱</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;addr&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: 我的家庭住址</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;officeAddr&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: 公司地址</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  # faq</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;chongt&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: 冲突了，merge 下 master。</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  # code</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;log&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: console.log($|$)</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;;delay&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: const delay = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  # mac symbols</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:cmd&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⌘&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:shift&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⇧&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:ctrl&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⌃&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:alt&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⌥&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:opt&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⌥&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:left&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;←&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:right&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;→&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:up&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;↑&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:down&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;↓&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:caps_lock&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⇪&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:esc&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⎋&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:eject&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⏏&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:return&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;↵&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:enter&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⌅&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:tab&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⇥&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:backtab&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⇤&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:pgup&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⇞&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:pgdown&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⇟&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:home&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;↖&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:end&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;↘&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:space&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;␣&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:del&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⌫&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">  - trigger: &quot;:fdel&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">    replace: &quot;⌦&quot;  </span></span></code></pre>
+<h3 id="thor" style="position:relative;"><a href="#thor" aria-label="thor permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Thor</h3>
+<p>让你可以一键启动、显示或隐藏某个 App，对我来说是效率神器。但有时太快也不好，会让你无意间地快速切过去，比如钉钉、Reeder 和 Telegram 我后来就把他们去掉了。</p>
+<p>我的配置见<a href="https://img.alicdn.com/imgextra/i3/O1CN01PWmDZN24797TUfPbL_!!6000000007343-0-tps-594-1918.jpg">图</a>，快捷键供参考。</p>
+<h3 id="安装字体" style="position:relative;"><a href="#%E5%AE%89%E8%A3%85%E5%AD%97%E4%BD%93" aria-label="安装字体 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>安装字体</h3>
+<p>编程字体我用 <a href="https://www.monolisa.dev/">Monolisa</a>，之前还用过 <a href="https://github.com/adobe-fonts/source-code-pro">Source Code Pro</a>、<a href="https://dank.sh/">Dank Mono</a> 和 <a href="https://www.typography.com/fonts/operator/overview">Operator Mono</a>。此外我还安装了<a href="https://github.com/lxgw/LxgwWenKai">霞鹜文楷</a>。</p>
+<h3 id="vscode" style="position:relative;"><a href="#vscode" aria-label="vscode permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>VSCode</h3>
+<p>辅助编辑器，施工中。</p>
+<p>目前包含的插件如下。</p>
+<pre class="grvsc-container one-dark-pro" data-language="" data-index="4"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source">dbaeumer.vscode-eslint</span></span>
+<span class="grvsc-line"><span class="grvsc-source">esbenp.prettier-vscode</span></span>
+<span class="grvsc-line"><span class="grvsc-source">GitHub.copilot</span></span>
+<span class="grvsc-line"><span class="grvsc-source">isudox.vscode-jetbrains-keybindings</span></span>
+<span class="grvsc-line"><span class="grvsc-source">kettanaito.nako</span></span>
+<span class="grvsc-line"><span class="grvsc-source">styled-components.vscode-styled-components</span></span>
+<span class="grvsc-line"><span class="grvsc-source">unifiedjs.vscode-mdx</span></span>
+<span class="grvsc-line"><span class="grvsc-source">usernamehw.errorlens</span></span></code></pre>
+<p>主题是 <a href="https://marketplace.visualstudio.com/items?itemName=kettanaito.nako">Nako - Visual Studio Marketplace</a>。</p>
+<h3 id="git" style="position:relative;"><a href="#git" aria-label="git permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git</h3>
+<p>先配 name 和 email。</p>
+<pre class="grvsc-container one-dark-pro" data-language="" data-index="5"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source">git config --global user.name &quot;Your Name&quot;</span></span>
+<span class="grvsc-line"><span class="grvsc-source">git config --global user.email &quot;you@your-domain.com&quot;</span></span></code></pre>
+<p>再执行这两条命令。</p>
+<pre class="grvsc-container one-dark-pro" data-language="" data-index="6"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source">git config --global --add push.default current</span></span>
+<span class="grvsc-line"><span class="grvsc-source">git config --global --add push.autoSetupRemote true</span></span></code></pre>
+<p>你会收获两个好处。1）不需要「git push origin xxx」，只要「git push」，2）再也不会遇到「no upstream branch」的报错，也不需要「git push --set-upstream origin test &#x26;&#x26; git push」。因为我们执行 git push 的大部分场景都是 push 到同名的 remote branch。来源是 <a href="https://pawelgrzybek.com/auto-setup-remote-branch-and-never-again-see-an-error-about-the-missing-upstream/">Auto setup remote branch and never again see an error about the missing upstream | pawelgrzybek.com</a>。</p>
+<p>再修改 ~/.gitignore_global，加入和你 IDE 相关的 ignore 配置。我会把 .idea 加进去，这是和你相关的专有配置，如果给其他用 VSCode 的作者的项目提交时，都加上 .idea 的 .gitignore 配置，其实并不太礼貌。反之，VSCode 或其他编辑器工具的用户也要加上自己的。</p>
+<pre class="grvsc-container one-dark-pro" data-language="" data-index="7"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source">*~</span></span>
+<span class="grvsc-line"><span class="grvsc-source">.DS_Store</span></span>
+<span class="grvsc-line"><span class="grvsc-source">.idea</span></span></code></pre>
+<h3 id="nvm-和-node" style="position:relative;"><a href="#nvm-%E5%92%8C-node" aria-label="nvm 和 node permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NVM 和 Node</h3>
+<pre class="grvsc-container one-dark-pro" data-language="bash" data-index="8"><code class="grvsc-code"><span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">nvm install 18</span></span></span>
+<span class="grvsc-line"><span class="grvsc-source"><span class="mtk1">node -v</span></span></span></code></pre>
+<h3 id="eagle" style="position:relative;"><a href="#eagle" aria-label="eagle permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Eagle</h3>
+<p>Eagle 的库我保存在 ~/Documents/SoftwareConfiguration/Eagle 下。</p>
+<h3 id="bob" style="position:relative;"><a href="#bob" aria-label="bob permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Bob</h3>
+<p>我的快捷键是「F19+A」划词翻译，「F19+S」截图翻译。插件装了 <a href="https://github.com/clubxdev/bob-plugin-deeplx">bob-plugin-deeplx</a> 和 <a href="https://github.com/roojay520/bobplugin-google-translate">bobplugin-google-translate</a>。文本翻译我加了 DeeplX、有道、阿里、金山词霸，文本识别我用腾讯 OCR。</p>
+<h3 id="rectangle" style="position:relative;"><a href="#rectangle" aria-label="rectangle permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rectangle</h3>
+<p>删了所有快捷键，只保留两个。「F19+C」居中，「F19+M」放最大。</p>
+<h3 id="upic" style="position:relative;"><a href="#upic" aria-label="upic permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>uPic</h3>
+<p>用了自定义图床，略。</p>
+<h3 id="paste" style="position:relative;"><a href="#paste" aria-label="paste permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Paste</h3>
+<p>我的快捷键是「⌘⌥C」。配置里选上「Always paste as Plain Text」，去掉「Enable sound effects」。</p>
+<h3 id="reeder" style="position:relative;"><a href="#reeder" aria-label="reeder permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reeder</h3>
+<p>两个改动。在 Shortcuts 配置里，把「Mark All as Read…」的快捷键改成「⇧A」，然后去掉「Ask before marking all as read」。</p>
+<h3 id="google-chrome" style="position:relative;"><a href="#google-chrome" aria-label="google chrome permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Google Chrome</h3>
+<p>登录 Google 账号后所有东西就都同步过来了，除了 Tampermonkey 的自定义脚本。但简单 Google 后也找到了办法，我参考 <a href="https://gist.github.com/derjanb/9f6c10168e63c3dc3cf0">extract<em>tampermonkey</em>script.py · GitHub</a> 把 <code>/Users/%YOUR_USERNAME%/Library/Application\ Support/Google/Chrome/Default/Local\ Extension\ Settings/dhdgffkkebhmkfjojejmpbldmpobfkfo</code> 这个文件夹下的内容复制到新电脑后就能用了。</p>
+<h3 id="telegram" style="position:relative;"><a href="#telegram" aria-label="telegram permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Telegram</h3>
+<p>登录时死活登不上，开了代理才行。</p>
+<h3 id="ia-writer" style="position:relative;"><a href="#ia-writer" aria-label="ia writer permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>iA Writer</h3>
+<p>把所有 Markdown 文件<a href="https://img.alicdn.com/imgextra/i1/O1CN01YZ2Osn1qtmYrCS9tw_!!6000000005554-2-tps-502-752.png">改成用 iA Writer 打开</a>，因为 iA Writer 又轻又好看。然后我在「系统设置 > Keyboard > Keyboard Shortcuts > App Shortcuts」中增加了一些针对 IA Writer 的快捷键配置。</p>
+<ul>
+<li>Show Preview「⌘P」</li>
+<li>Hide Preview「⌘P」</li>
+<li>Move Line Up「⌘⇧↑」</li>
+<li>Move Line Down「⌘⇧↓」</li>
+<li>Strikethrough「⌘⇧R」</li>
+</ul>
+<h3 id="shottr" style="position:relative;"><a href="#shottr" aria-label="shottr permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Shottr</h3>
+<p>快捷键里把所有都删了，只保留两个。Area screenshot 用「F19 + 7」，Scrolling screenshot 用「F19 + 8」。</p>
+<h3 id="sip" style="position:relative;"><a href="#sip" aria-label="sip permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sip</h3>
+<p>Show Picker 的快捷键是「F19 + 2」。</p>
+<h3 id="cleanshotx" style="position:relative;"><a href="#cleanshotx" aria-label="cleanshotx permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CleanShotX</h3>
+<p>Capture Area 的快捷键是「F19 + 6」。</p>
+<h2 id="系统设置" style="position:relative;"><a href="#%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE" aria-label="系统设置 permalink" class="toc-header before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>系统设置</h2>
+<ol>
+<li>General。1）Default Web Browser 用「Google Chrome」，2）Language &#x26; Region 里，把 First day of week 改成「Monday」，这样你的日历就会<a href="https://img.alicdn.com/imgextra/i2/O1CN014aouuQ1HfZisiosbo_!!6000000000785-0-tps-2456-1572.jpg">从周一开始</a>了。</li>
+<li>Siri。直接禁掉。</li>
+<li>Trackpad。Scroll direction：Natural 去掉。</li>
+<li>Keyboard。1）Keyboard 里把 Key Repeat 调到「Fast」，把 Delay Util Repeat 调到「Short」，需要一点时间适应，适应后会感受到光标快速移动带来的效率提升，2）Text 里 use <code>"</code> for double quotes，use <code>'</code> for single quotes，然后把其他都禁掉，不需要系统帮忙改，基本都是帮倒忙的，3）Shortcuts 里，Mission Control 用「⌥A」,Application windows 用「⌥S」，Show Desktop 用「⌥D」，Input Sources 的 Select Previous 用 「⌘Space」，Screenshots 里 Save picture of selected area as a file 用「F19 + 3」，Copy picture of selected area to the clipboard 用「F19 + 4」，4）输入法删除默认的拼音改用搜狗拼音，登录后可以在不同电脑之间同步词库，搜狗输入法的皮肤我用的<a href="https://github.com/xiaochunjimmy/Sogou-Input-Skin">Matrix 矩阵</a>。</li>
+<li>Spotlight。只开 Applications、Bookmarks &#x26; History、Documents、Folders、System Preferences。</li>
+<li>Mission Control。把 Hot Corners 里的全部关掉，不需要，因为有 Thor 了，可以更快切除应用。</li>
+<li>Sharing。只留「AirPlay Receiver」即可，同时可以改下 computer name。</li>
+<li>Security &#x26; Privacy。把「Use Apple Watch to unlock」打开。</li>
+<li>Notification。不必要的全关掉，我只开了 Calendar、Find By、Reminders 和 Wallet。</li>
+<li>Touch ID and Password。开启用 Apple Watch 解锁。</li>
+<li>执行 <code>defaults write -g NSWindowShouldDragOnGesture -bool true</code>，然后就可以按住「⌘+⌃」然后鼠标点击任意地方拖动窗口了。来源 <a href="https://mmazzarolo.com/blog/2022-04-16-drag-window-by-clicking-anywhere-on-macos/">Moving a macOS window by clicking anywhere on it (like on Linux) · mmazzarolo.com</a>，但是在 MacOS 13 下似乎失效了。</li>
+</ol>
+<!-- ## 参考
+
+- [Mac Setup for Web Development 2023](https://www.robinwieruch.de/mac-setup-web-development/)
+- [My 2021 New Mac Setup](https://www.swyx.io/new-mac-setup-2021) -->
+<style class="grvsc-styles">
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line > * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: ' ';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting > .grvsc-code > .grvsc-line::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .one-dark-pro {
+    background-color: #282c34;
+    color: #abb2bf;
+  }
+  .one-dark-pro .mtki { font-style: italic; }
+  .one-dark-pro .mtk5 { color: #7F848E; }
+  .one-dark-pro .mtk9 { color: #C678DD; }
+  .one-dark-pro .mtk1 { color: #ABB2BF; }
+  .one-dark-pro .mtk6 { color: #98C379; }
+  .one-dark-pro .mtk8 { color: #56B6C2; }
+  .one-dark-pro .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
+</style></div></div></div></div><div class="css-1bdwg0l ek48yxb0"><div><style data-emotion-css="17t5ffy">.css-17t5ffy{margin-top:1rem;margin-bottom:1rem;}</style><div class="css-17t5ffy"><div class="css-1l4w6pd"><div class="css-yapsbb"></div></div></div><style data-emotion-css="i1cgbm">.css-i1cgbm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;margin-top:1rem;padding-left:0.5rem;padding-right:0.5rem;}</style><div class="css-i1cgbm"><style data-emotion-css="rk0yc0">.css-rk0yc0{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.25rem;padding-bottom:0.25rem;margin-top:0.5rem;margin-bottom:0.5rem;margin-left:0.5rem;border-radius:0.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));background-color:#6E7783;}</style><button class="css-rk0yc0"><style data-emotion-css="u7tj59">.css-u7tj59{fill:currentColor;margin-top:auto;margin-bottom:auto;margin-right:0.25rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="css-u7tj59" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg>分享<!-- -->链接</button></div></div><style data-emotion-css="14e3tt2">.css-14e3tt2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding-left:0.5rem;padding-right:0.5rem;}</style><div class="css-14e3tt2"><style data-emotion-css="1cwag5x">.css-1cwag5x{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.25rem;padding-bottom:0.25rem;margin-top:0.5rem;margin-bottom:0.5rem;border-radius:0.25rem;--text-opacity:1;color:rgba(255,255,255,var(--text-opacity));background-color:#FF813E;}</style><a rel="noopener noreferrer" class="css-1cwag5x"><style data-emotion-css="9u48bm">.css-9u48bm{margin-right:0.5rem;}</style><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee" class="css-9u48bm"/><span>喝杯咖啡</span></a></div></div></div></div><div class="css-1bdwg0l ek48yxb0"><style data-emotion-css="17t1oy1">.css-17t1oy1{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap-reverse;-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse;margin-left:0.5rem;margin-right:0.5rem;margin-top:1rem;}@media (min-width:768px){.css-17t1oy1{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}}</style><div class="css-17t1oy1 e1qauygv0"><style data-emotion-css="1pwr1ry">.css-1pwr1ry{width:100%;margin:0.5rem;}@media (min-width:768px){.css-1pwr1ry{width:50%;margin:1rem;}}</style><div class="css-1pwr1ry e1qauygv1"><style data-emotion-css="vl2eok">.css-vl2eok{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);text-align:left;width:100%;height:100%;padding:0.5rem;background-color:#eee;border-radius:0.25rem;border-left-width:4px;border-color:#86a8e7;}.css-vl2eok:hover{background-color:#ddd;}</style><a rel="prev" class="css-vl2eok" href="/ice-breaking-game/凝聚期/猜谜语/"><style data-emotion-css="19o7xeo">.css-19o7xeo{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;margin-right:1rem;margin-left:0.5rem;height:100%;}</style><div class="css-19o7xeo"><style data-emotion-css="11za1ik">.css-11za1ik{width:2rem;height:2rem;margin-top:auto;margin-bottom:auto;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-11za1ik" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M872 474H286.9l350.2-304c5.6-4.9 2.2-14-5.2-14h-88.5c-3.9 0-7.6 1.4-10.5 3.9L155 487.8a31.96 31.96 0 0 0 0 48.3L535.1 866c1.5 1.3 3.3 2 5.2 2h91.5c7.4 0 10.8-9.2 5.2-14L286.9 550H872c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"></path></svg></div><style data-emotion-css="v38or">.css-v38or{display:inline-block;margin-top:0.5rem;margin-bottom:0.5rem;}</style><div class="css-v38or"><style data-emotion-css="2m7hin">.css-2m7hin{color:#3737B9;}</style><p class="css-2m7hin">上一个</p><p>猜谜语</p></div></a></div><div class="css-1pwr1ry e1qauygv1"><style data-emotion-css="xhvfnc">.css-xhvfnc{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);text-align:right;width:100%;height:100%;padding:0.5rem;background-color:#eee;border-radius:0.25rem;border-right-width:4px;border-color:#86a8e7;}.css-xhvfnc:hover{background-color:#ddd;}</style><a rel="next" class="css-xhvfnc" href="/ice-breaking-game/凝聚期/凝聚期游戏汇总/"><div class="css-v38or"><p class="css-2m7hin">下一个</p><p>凝聚期游戏汇总</p></div><div class="css-19o7xeo"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-11za1ik" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg></div></a></div></div><style data-emotion-css="14yohw7">.css-14yohw7{width:100%;max-width:768px;padding-left:1rem;padding-right:1rem;margin-left:auto;margin-right:auto;padding-top:2rem;margin-top:0.5rem;margin-bottom:1rem;}@media (min-width:768px){.css-14yohw7{padding-left:0;padding-right:0;padding-top:3rem;}}</style><div class="css-14yohw7 ed1ahok0"><style data-emotion-css="180ky7f">.css-180ky7f{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:0.5rem;padding-right:0.5rem;}@media (min-width:768px){.css-180ky7f{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}</style><div class="css-180ky7f ed1ahok1"><style data-emotion-css="p5b1u1">.css-p5b1u1{border-radius:9999px;border-width:1px;--border-opacity:1;border-color:rgba(214,188,250,var(--border-opacity));margin-right:2rem;margin-bottom:0.5rem;}@media (min-width:768px){.css-p5b1u1{margin-bottom:1rem;}}</style><div class="css-p5b1u1 gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:128px;height:128px"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EABcBAQEBAQAAAAAAAAAAAAAAAAIAAQP/2gAMAwEAAhADEAAAAeghrNexE5RkKRzz/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQMAAhETMv/aAAgBAQABBQJjcNHaY9dtT52MJ40MM//EABgRAQADAQAAAAAAAAAAAAAAAAABAhES/9oACAEDAQE/AcdQsx//xAAbEQEAAAcAAAAAAAAAAAAAAAAAAQMREiExMv/aAAgBAgEBPwGuFyVyjt//xAAbEAADAAIDAAAAAAAAAAAAAAAAARECECExMv/aAAgBAQAGPwKEmnkuUzzKdje//8QAGhAAAwEBAQEAAAAAAAAAAAAAAAERMUFhIf/aAAgBAQABPyFLl1aTO3SinaD8HlLzUkJJaO2/RLG9aP/aAAwDAQACAAMAAAAQ4BD9/8QAGREBAQEAAwAAAAAAAAAAAAAAAQARITFh/9oACAEDAQE/EDWre03iBnV//8QAGhEAAwADAQAAAAAAAAAAAAAAAAERITFRcf/aAAgBAgEBPxCIaK4Ll6bj/8QAHBABAQACAwEBAAAAAAAAAAAAAREAITFRYUFx/9oACAEBAAE/EDZIbPzL9ySO8ZecOhVA5XvmGuw2Kv5hHYuOpCQetzL2iHSu8G87Dn//2Q==" alt="profileImg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/6dc0c/timg.jpg 1x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/cc017/timg.jpg 1.5x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/0c30b/timg.jpg 2x" /><img loading="lazy" width="128" height="128" srcset="/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/6dc0c/timg.jpg 1x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/cc017/timg.jpg 1.5x,
+/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/0c30b/timg.jpg 2x" src="/ice-breaking-game/static/dc3f4acd428cae0f9c5299f571477406/6dc0c/timg.jpg" alt="profileImg" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div><span>Written by </span><style data-emotion-css="1t4jyca">.css-1t4jyca{display:inline-block;font-size:1.25rem;font-weight:700;border-radius:9999px;margin-bottom:0.5rem;padding-left:0.75rem;padding-right:0.75rem;--bg-opacity:1;background-color:rgba(237,242,247,var(--bg-opacity));color:#3737B9;}</style><p class="css-1t4jyca">@<!-- -->zhuguibiao</p><style data-emotion-css="vg2p6i">.css-vg2p6i{font-size:0.875rem;font-weight:400;margin-bottom:0.5rem;}</style><div class="css-vg2p6i">An icebreaker game website serving the jh</div></div></div><style data-emotion-css="1air669">.css-1air669{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-left:0.5rem;margin-right:0.5rem;}</style><div class="css-1air669"><div class="css-yapsbb"></div></div><style data-emotion-css="1baulvz">.css-1baulvz{display:inline-block;}</style><a title="github Link" href="https://github.com/zhuguibiao/ice-breaking-game" class="css-1baulvz"><style data-emotion-css="vnd1fq">.css-vnd1fq{width:2rem;height:2rem;margin-top:1rem;margin-left:1rem;-webkit-transition:all 300ms cubic-bezier(0,0,0.2,1);transition:all 300ms cubic-bezier(0,0,0.2,1);color:#888;}.css-vnd1fq:hover{color:#000;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="css-vnd1fq" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a title="twitter Link" href="https://twitter.com/zhuguibiao" class="css-1baulvz"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="css-vnd1fq" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a></div></div></div><style data-emotion-css="xgi74q">.css-xgi74q{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:fixed;bottom:0;right:0;padding-right:1.5rem;padding-bottom:1.5rem;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style><div class="css-xgi74q e98h7c80"><style data-emotion-css="1a68u">.css-1a68u{box-shadow:0 2px 2px 0 rgba(0,0,0,0.15);-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#636363;font-size:0.75rem;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.5rem;padding-bottom:0.5rem;border-radius:9999px;--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;-webkit-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));-ms-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-content:flex-end;-ms-flex-line-pack:end;align-content:flex-end;z-index:100;}.css-1a68u:hover{background-color:#404040;color:#FFFFFF;}.css-1a68u:hover{--transform-scale-x:1.05;--transform-scale-y:1.05;}</style><button title="change to darkmode" class="css-1a68u"><style data-emotion-css="1alqh2e">.css-1alqh2e{fill:currentColor;--text-opacity:1;color:rgba(246,224,94,var(--text-opacity));width:1rem;height:1rem;margin-top:auto;margin-bottom:auto;margin-left:0;margin-right:0;}@media (min-width:768px){.css-1alqh2e{display:inline-block;margin-left:0.25rem;margin-right:0.25rem;}}</style><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="css-1alqh2e" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><style data-emotion-css="flxr9x">.css-flxr9x{display:none;margin-right:0;}@media (min-width:768px){.css-flxr9x{display:inline-block;margin-right:0.25rem;}}</style><span class="css-flxr9x">夜晚</span></button><style data-emotion-css="15afv4q">.css-15afv4q{box-shadow:0 2px 2px 0 rgba(0,0,0,0.15);-webkit-transition:all 300ms cubic-bezier(0.4,0,0.2,1);transition:all 300ms cubic-bezier(0.4,0,0.2,1);background-color:#FFFFFF;color:#636363;font-size:0.75rem;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.5rem;padding-bottom:0.5rem;border-radius:9999px;--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;-webkit-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));-ms-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));cursor:pointer;margin-left:0.5rem;margin-top:auto;margin-bottom:auto;z-index:100;}.css-15afv4q:hover{background-color:#404040;color:#FFFFFF;}.css-15afv4q:hover{--transform-scale-x:1.05;--transform-scale-y:1.05;}</style><button title="top page" class="css-15afv4q"><style data-emotion-css="13htjwu">.css-13htjwu{width:1rem;height:1rem;}</style><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="css-13htjwu" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M868 545.5L536.1 163a31.96 31.96 0 0 0-48.3 0L156 545.5a7.97 7.97 0 0 0 6 13.2h81c4.6 0 9-2 12.1-5.5L474 300.9V864c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V300.9l218.9 252.3c3 3.5 7.4 5.5 12.1 5.5h81c6.8 0 10.5-8 6-13.2z"></path></svg></button></div><style data-emotion-css="1k8xcyw">.css-1k8xcyw{text-align:center;padding-top:2rem;padding-bottom:2rem;bottom:0;}</style><footer class="css-1k8xcyw"><style data-emotion-css="1xju3od">.css-1xju3od{font-size:0.75rem;font-weight:700;}</style><a href="https://github.com/zhuguibiao/ice-breaking-game" class="css-1xju3od">©zhuguibiao</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-221286010-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/macbook-pro/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd0e7b58af492b498675.js"],"app":["/app-70073db101c422a64533.js"]};/*]]>*/</script><script src="/ice-breaking-game/polyfill-cd0e7b58af492b498675.js" nomodule=""></script><script src="/ice-breaking-game/app-70073db101c422a64533.js" async=""></script><script src="/ice-breaking-game/76ed74f8-9ef585f0346bc3c2c0c0.js" async=""></script><script src="/ice-breaking-game/a0fb4d8f-6e13e2cf7fe97741bf45.js" async=""></script><script src="/ice-breaking-game/ff08cc1e-be779e151dac4d9f9baa.js" async=""></script><script src="/ice-breaking-game/styles-9411612e31e4f14527d1.js" async=""></script><script src="/ice-breaking-game/framework-9e190ddcdab0587328a8.js" async=""></script><script src="/ice-breaking-game/webpack-runtime-d1559ebe03340a0b49f8.js" async=""></script></body></html>
