@@ -80,6 +80,10 @@ export default ({ data, pageContext, location }) => {
               <div className="blog-tags" css={tw`mb-2`}>
                 <Tags tags={frontmatter.tags} onClick={handleTagClick} />
               </div>
+              <div css={css`color: #FF813E;`}>
+                <a href="/pdf">《游戏文档》</a>
+                <a href="/bookmark">《其他游戏链接》</a>
+              </div>
               <Divider color />
             </Wrapper>
             <div className={"blog-content"}>
