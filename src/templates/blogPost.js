@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { graphql, navigate } from "gatsby"
+import { graphql, navigate, Link } from "gatsby"
 import SEO from "../components/seo"
 import Profile from "../components/Profile"
 import tw, { css } from "twin.macro"
@@ -81,8 +81,8 @@ export default ({ data, pageContext, location }) => {
                 <Tags tags={frontmatter.tags} onClick={handleTagClick} />
               </div>
               <div css={css`color: #FF813E;`}>
-                <a href="/pdf">《游戏文档》</a>
-                <a href="/bookmark">《其他游戏链接》</a>
+                <Link to="/pdf">《游戏文档》</Link>
+                <Link to="/bookmark">《其他游戏链接》</Link>
               </div>
               <Divider color />
             </Wrapper>
