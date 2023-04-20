@@ -45,7 +45,6 @@ export default ({ data, location }) => {
 
   useEffect(() => {
     if (location.href) {
-      console.log(location.href)
       setLName(location.href.indexOf('ice-breaking-game') === -1 ? '' : '/ice-breaking-game')
     }
   }, [])
