@@ -81,8 +81,9 @@ export default ({ data, pageContext, location }) => {
                 <Tags tags={frontmatter.tags} onClick={handleTagClick} />
               </div>
               <div css={css`color: #FF813E;`}>
-                <Link to="/pdf">《游戏文档》</Link>
+                <Link css={css`font-weight:bold;`} to="/game-notice">《游戏心得》</Link>
                 <Link to="/bookmark">《其他游戏链接》</Link>
+                <Link to="/pdf">《游戏文档》</Link>
               </div>
               <Divider color />
             </Wrapper>
