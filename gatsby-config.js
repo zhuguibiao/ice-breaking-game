@@ -60,9 +60,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: metaConfig.ga,
+        trackingIds: metaConfig.gtag,
       },
     },
     {
@@ -143,11 +143,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `https-icebreakinggames-gatsbyjs-io`
-      }
+        shortname: `https-icebreakinggames-gatsbyjs-io`,
+      },
     },
-
   ],
-  pathPrefix: '/ice-breaking-game',
-
+  pathPrefix: "/ice-breaking-game",
 }
