@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import ThemeContext from "../lib/context/ThemContext"
 
 const fileList = [
+  '恩溪-5G小组游戏库（更新）.pdf',
   '主日学课件.pdf',
   '良友讲义.pdf',
   '恩溪破冰游戏库.pdf',
