@@ -7,6 +7,6 @@ use gatsby
 
 ## 🚀 地址
 
-[线上地址1](https://icebreakinggames.gatsbyjs.io/)
+[线上地址1](https://icebreakinggames.netlify.io/)
 [线上地址2](https://zhuguibiao.github.io/ice-breaking-game/)
 
