@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/恩溪适应期游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/恩溪线上游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/大型游戏/恩溪大型游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/凝聚期/恩溪凝聚期游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/探索期/恩溪探索期游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/主日学/恩溪主日学游戏/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/恩溪线上游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/加速游戏/恩溪加速游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/出发期/恩溪出发期游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/大型游戏/恩溪大型游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/适应期/适应期游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/探索期/探索期游戏汇总/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://icebreakinggames.gatsbyjs.io/ice-breaking-game/线上/线上游戏图片集合/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
