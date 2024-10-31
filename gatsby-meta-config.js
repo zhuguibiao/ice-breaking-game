@@ -3,7 +3,7 @@ module.exports = {
   description: `破冰游戏`,
   author: `zhuguibiao`,
   introduction: `An icebreaker game website serving the jh`,
-  siteUrl: `https://icebreakinggames.gatsbyjs.io/`,
+  siteUrl: `https://icebreakinggames.netlify.app/`,
   social: {
     twitter: `zhuguibiao`, // Your Twitter account
     github: `zhuguibiao/ice-breaking-game`, // Your GitHub account
