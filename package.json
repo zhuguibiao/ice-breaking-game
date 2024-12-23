@@ -14,9 +14,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
-  "engines": {
-    "pnpm": "8.x"
-  },
+  "packageManager": "pnpm@8.15.9",
   "dependencies": {
     "gatsby": "^2.29.1",
     "gatsby-image": "^2.8.0",
